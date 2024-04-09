@@ -85,7 +85,7 @@ if __name__ == "__main__":
         img_emb, text_emb, caption_emb = extract_embeddings(image, text, caption)
 
         # -- saving embeddings
-        save_embedding(img_emb, ios.path.join(args.output_dir, 'image', f'{sample_id}.npz'))
-        save_embedding(text_emb, ios.path.join(args.output_dir, 'text', f'{sample_id}.npz'))
-        save_embedding(caption_emb, ios.path.join(args.output_dir, 'caption', f'{sample_id}.npz'))
+        save_embedding(img_emb, os.path.join(args.output_dir, 'image', f'{sample_id}.npz'))
+        save_embedding(text_emb, os.path.join(args.output_dir, 'text', f'{sample_id}.npz'))
+        save_embedding(caption_emb, os.path.join(args.output_dir, 'caption', f'{sample_id}.npz'))
 
