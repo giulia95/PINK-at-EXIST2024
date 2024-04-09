@@ -86,6 +86,6 @@ if __name__ == "__main__":
 
         # -- saving embeddings
         save_embedding(img_emb, ios.path.join(args.output_dir, 'image', f'{sample_id}.npz'))
-        save_embedding(img_emb, ios.path.join(args.output_dir, 'text', f'{sample_id}.npz'))
-        save_embedding(img_emb, ios.path.join(args.output_dir, 'caption', f'{sample_id}.npz'))
+        save_embedding(text_emb, ios.path.join(args.output_dir, 'text', f'{sample_id}.npz'))
+        save_embedding(caption_emb, ios.path.join(args.output_dir, 'caption', f'{sample_id}.npz'))
 
