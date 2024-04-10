@@ -72,6 +72,7 @@ if __name__ == "__main__":
     parser.add_argument('--validation-dataset', required=True, type=str, help='JSON file representing the validation dataset')
     parser.add_argument('--mode', default='both', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument('--load-checkpoint', default='', type=str, help='Choose between: "training", "evaluation", or "both"')
+    parser.add_argument("--yaml-overrides", metavar="CONF:[KEY]:VALUE", nargs='*', help="Set a number of conf-key-value pairs for modifying the yaml config file on the fly.")
     parser.add_argument('--output-dir', required=True, type=str, help='Path where to save model checkpoints and predictions')
     parser.add_argument('--output-name', required=True, type=str, help='Choose between: "validation", or "test"')
 
@@ -81,6 +82,7 @@ if __name__ == "__main__":
     config_file = Path(args.config)
     with config_file.open('r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
+    config = override_yaml(config, args.yaml_overrides)
     config = argparse.Namespace(**config)
 
     # -- building model architecture
