@@ -26,8 +26,8 @@ training_settings:
   anneal_strategy: 'linear'
   loss_criterion: 'cross_entropy'
   epochs: 20
-  batch_size: 16
-  learning_rate: 0.0004
+  batch_size: 8
+  learning_rate: 0.0005
   num_workers: 8
 
 # -- task related
