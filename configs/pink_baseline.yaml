@@ -14,8 +14,8 @@ model: pink_baseline
 model_conf:
   input_dim: 512
   latent_dim: 256
-  n_head: 8
-  num_encoder_layers: 6
+  n_head: 4
+  num_encoder_layers: 4
   dim_feedforward: 2048
   modality_masking_prob: 0.0
 
@@ -32,5 +32,9 @@ training_settings:
 
 # -- task related
 num_classes: 2
-task: 'task4'
+class_names:
+ - sexism
+ - no-sexism
+report_class: 'sexism'
+task: 'hard_label_task4'
 device: 'cuda'

@@ -1,12 +1,18 @@
+import os
+import sys
 import torch
 import pickle
 
-from models import PinkBaseline
+from models import PinkMLP, PinkTransformer
 from datasets import PinkDataset
 
 def build_model(config):
-    if config.model == 'pink_baseline':
-        model = PinkBaseline(config).to(config.device)
+    if config.model == 'pink_mlp':
+        model = PinkMLP(config).to(config.device)
+
+    elif config.model == 'pink_transformer':
+        model = PinkTransformer(config).to(config.device)
+
     else:
         raise ValueError(f'unknown {config.model} model architecture')
 
@@ -14,7 +20,7 @@ def build_model(config):
 
 def get_dataloader(config, dataset_path, is_training=False):
 
-    dataset = PinkDataset(dataset_path)
+    dataset = PinkDataset(dataset_path, task=config.task, is_training=False)
     dataloader = torch.utils.data.DataLoader(
         dataset,
         shuffle=is_training,
@@ -25,27 +31,27 @@ def get_dataloader(config, dataset_path, is_training=False):
 
     return dataloader
 
-def get_optimizer_and_scheduler(config, train_loader):
+def get_optimizer_and_scheduler(config, model, train_loader):
     # -- optimizer
     if config.training_settings['optimizer'] == "adamw":
-        optimizer = optim.AdamW(
-            filter(lambda p: p.requires_grad, our_amazing_model.parameters()),
+        optimizer = torch.optim.AdamW(
+            filter(lambda p: p.requires_grad, model.parameters()),
             config.training_settings['learning_rate'],
         )
     else:
-        raise ValueError('unknown {args.training_settings["optimizer"]} optimizer')
+        raise ValueError('unknown {config.training_settings["optimizer"]} optimizer')
 
     # -- scheduler
     if config.training_settings['scheduler'] == 'onecycle':
-        scheduler = optim.lr_scheduler.OneCycleLR(
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(
             optimizer,
             max_lr=config.training_settings['learning_rate'],
             epochs=config.training_settings['epochs'],
             steps_per_epoch=len(train_loader),
-            anneal_strategy=args.training_settings['anneal_strategy'],
+            anneal_strategy=config.training_settings['anneal_strategy'],
         )
     else:
-        raise ValueError('unknown {args.training_settings["scheduler"]} scheduler')
+        raise ValueError('unknown {config.training_settings["scheduler"]} scheduler')
 
     return optimizer, scheduler
 

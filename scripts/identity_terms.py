@@ -8,6 +8,7 @@ Requires Spacy stanza: "pip install spacy-stanza"
 """
 
 import pandas as pd
+import argparse
 import string
 from collections import Counter
 import stanza
@@ -16,7 +17,6 @@ import re
 import os
 from tqdm import tqdm
 from . import preprocessing
-
 
 # _______________________________________________UTILS_______________________________________________________
 # stopwords redefined to keep potentially sexism/misoginy-related terms
@@ -37,27 +37,21 @@ stopwords = ["a", "about", "above", "above", "across", "afterwards", "again", "a
              "inc", "indeed", "interest", "into", "is", "keep", "last", "latter", "latterly",
              "least", "less", "ltd", "made", "many", "may", "meanwhile", "might", "mill",
              "more", "moreover", "most", "mostly", "move", "much", "must", "name", "namely", "neither", "never",
-             "nevertheless",
-             "next", "nine", "no", "nobody", "none", "noone", "nor", "not", "now", "nowhere", "of", "off", "often",
-             "on", "once",
-             "one", "only", "onto", "or", "other", "others", "otherwise", "out", "over", "part", "per", "perhaps",
-             "please",
-             "put", "rather", "re", "same", "see", "seem", "seemed", "seeming", "seems", "serious", "several", "should",
-             "show",
-             "side", "since", "sincere", "six", "sixty", "so", "some", "somehow", "someone", "sometime", "sometimes",
-             "somewhere",
-             "still", "such", "system", "take", "ten", "than", "that", "the", "then", "thence", "there", "thereafter",
-             "thereby",
-             "therefore", "therein", "thereupon", "these", "thick", "thin", "third", "this", "those", "though", "three",
-             "through",
-             "throughout", "thru", "thus", "to", "together", "too", "top", "toward", "towards", "twelve", "twenty",
-             "two", "un",
-             "under", "until", "up", "upon", "very", "via", "was", "well", "were", "what", "whatever", "when", "whence",
-             "whenever",
-             "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever", "whether", "which",
-             "while", "whither",
-             "who", "whoever", "whole", "whom", "whose", "why", "will", "with", "within", "without", "would", "yet",
-             "the",
+             "nevertheless", "next", "nine", "no", "nobody", "none", "noone", "nor", "not", 
+             "now", "nowhere", "of", "off", "often", "on", "once", "one", "only", "onto", "or",
+             "other", "others", "otherwise", "out", "over", "part", "per", "perhaps", "please",
+             "put", "rather", "re", "same", "see", "seem", "seemed", "seeming", "seems",
+             "serious", "several", "should", "show", "side", "since", "sincere", "six", "sixty",
+             "so", "some", "somehow", "someone", "sometime", "sometimes", "somewhere", "still", 
+             "such", "system", "take", "ten", "than", "that", "the", "then", "thence", "there",
+             "thereafter", "thereby", "therefore", "therein", "thereupon", "these", "thick", 
+             "thin", "third", "this", "those", "though", "three", "through", "throughout", 
+             "thru", "thus", "to", "together", "too", "top", "toward", "towards", "twelve", 
+             "twenty", "two", "un", "under", "until", "up", "upon", "very", "via",
+             "was", "well", "were", "what", "whatever", "when", "whence", "whenever",
+             "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever",
+             "whether", "which", "while", "whither", "who", "whoever", "whole", "whom",
+             "whose", "why", "will", "with", "within", "without", "would", "yet","the",
              "ve", "re", "ll", "10", "11", "18", "oh", "s", "t", "m", "did", "don", "got"]
 
 stopwords_es = ["a","actualmente","acuerdo","adelante","ademas","además","adrede","afirmó",
@@ -65,7 +59,7 @@ stopwords_es = ["a","actualmente","acuerdo","adelante","ademas","además","adred
                 "algún","alli","allí","alrededor","ambos","ampleamos","antano","antaño","ante",
                 "anterior","antes","apenas","aproximadamente","aquel","aquella","aquellas","aquello",
                 "aquellos","aqui","aquél","aquélla","aquéllas","aquéllos","aquí","arriba",
-                "arribaabajo","aseguró","asi","así","atras","aun","aunque","ayer","añadió","aún",
+                "arriba", "abajo","aseguró","asi","así","atras","aun","aunque","ayer","añadió","aún",
                 "b","bajo","bastante","bien","breve","buen","buena","buenas","bueno","buenos",
                 "c","cada","casi","cerca","cierta","ciertas","cierto","ciertos","cinco","claro",
                 "comentó","como","con","conmigo","conocer","conseguimos","conseguir","considera",
@@ -76,7 +70,7 @@ stopwords_es = ["a","actualmente","acuerdo","adelante","ademas","además","adred
                 "dejó","del","delante","demasiado","demás","dentro","deprisa","desde","despacio",
                 "despues","después","detras","detrás","dia","dias","dice","dicen","dicho","dieron",
                 "diferente","diferentes","dijeron","dijo","dio","donde","dos","durante","día","días",
-                "dónde","e","ejemplo","el","ella","ellas","ello","ellos","embargo","empleais","emplean",
+                "dónde","e","ejemplo","ello","embargo","empleais","emplean",
                 "emplear","empleas","empleo","en","encima","encuentra","enfrente","enseguida","entonces",
                 "entre","era","erais","eramos","eran","eras","eres","es","esa","esas","ese","eso","esos",
                 "esta","estaba","estabais","estaban","estabas","estad","estada","estadas","estado",
@@ -97,15 +91,15 @@ stopwords_es = ["a","actualmente","acuerdo","adelante","ademas","además","adred
                 "hube","hubiera","hubierais","hubieran","hubieras","hubieron","hubiese","hubieseis",
                 "hubiesen","hubieses","hubimos","hubiste","hubisteis","hubiéramos","hubiésemos","hubo",
                 "i","igual","incluso","indicó","informo","informó","intenta","intentais","intentamos",
-                "intentan","intentar","intentas","intento","ir","j","junto","k","l","la","lado","largo",
+                "intentan","intentar","intentas","intento","ir","j","junto","k","l","lado","largo",
                 "las","le","lejos","les","llegó","lleva","llevar","lo","los","luego","lugar","m","mal",
                 "manera","manifestó","mas","mayor","me","mediante","medio","mejor","mencionó","menos",
-                "menudo","mi","mia","mias","mientras","mio","mios","mis","misma","mismas","mismo",
-                "mismos","modo","momento","mucha","muchas","mucho","muchos","muy","más","mí","mía",
-                "mías","mío","míos","n","nada","nadie","ni","ninguna","ningunas","ninguno","ningunos",
-                "ningún","no","nos","nosotras","nosotros","nuestra","nuestras","nuestro","nuestros",
+                "menudo","mi","mientras","mis","misma","mismas","mismo",
+                "mismos","modo","momento","mucha","muchas","mucho","muchos","muy","más","mí",
+                "n","nada","nadie","ni","ninguna","ningunas","ninguno","ningunos",
+                "ningún","no","nos",
                 "nueva","nuevas","nuevo","nuevos","nunca","o","ocho","os","otra","otras","otro",
-                "otros","p","pais","para","parece","parte","partir","pasada","pasado","paìs",
+                "otros","p","pais","para","parece","parte","partir","pasada","pasado","país",
                 "peor","pero","pesar","poca","pocas","poco","pocos","podeis","podemos","poder",
                 "podria","podriais","podriamos","podrian","podrias","podrá","podrán","podría",
                 "podrían","poner","por","por qué","porque","posible","primer","primera","primero",
@@ -118,22 +112,21 @@ stopwords_es = ["a","actualmente","acuerdo","adelante","ademas","además","adred
                 "seremos","será","serán","serás","seré","seréis","sería","seríais","seríamos","serían",
                 "serías","seáis","señaló","si","sido","siempre","siendo","siete","sigue","siguiente",
                 "sin","sino","sobre","sois","sola","solamente","solas","solo","solos","somos","son",
-                "soy","soyos","su","supuesto","sus","suya","suyas","suyo","suyos","sé","sí","sólo",
+                "soy","soyos","su","supuesto","sus","sé","sí","sólo",
                 "t","tal","tambien","también","tampoco","tan","tanto","tarde","te","temprano","tendremos",
                 "tendrá","tendrán","tendrás","tendré","tendréis","tendría","tendríais","tendríamos",
                 "tendrían","tendrías","tened","teneis","tenemos","tener","tenga","tengamos","tengan",
                 "tengas","tengo","tengáis","tenida","tenidas","tenido","tenidos","teniendo","tenéis",
                 "tenía","teníais","teníamos","tenían","tenías","tercera","ti","tiempo","tiene","tienen",
-                "tienes","toda","todas","todavia","todavía","todo","todos","total","trabaja","trabajais",
+                "tienes","todavia","todavía","total","trabaja","trabajais",
                 "trabajamos","trabajan","trabajar","trabajas","trabajo","tras","trata","través","tres",
                 "tu","tus","tuve","tuviera","tuvierais","tuvieran","tuvieras","tuvieron","tuviese",
                 "tuvieseis","tuviesen","tuvieses","tuvimos","tuviste","tuvisteis","tuviéramos",
-                "tuviésemos","tuvo","tuya","tuyas","tuyo","tuyos","tú","u","ultimo","un","una",
-                "unas","uno","unos","usa","usais","usamos","usan","usar","usas","uso","usted",
-                "ustedes","v","va","vais","valor","vamos","van","varias","varios","vaya","veces",
-                "ver","verdad","verdadera","verdadero","vez","vosotras","vosotros","voy","vuestra",
-                "vuestras","vuestro","vuestros","w","x","y","ya","yo","z","él","éramos","ésa","ésas",
-                "ése","ésos","ésta","éstas","éste","éstos","última","últimas","último","últimos"]
+                "tuviésemos","tuvo","tú","u","ultimo","usa","usais","usamos","usan","usar","usas","uso","usted",
+                "ustedes","v","va","vais","valor","vamos","van","vaya","veces",
+                "ver","verdad","verdadera","verdadero","vez","voy",
+                "w","x","y","ya","yo","z","éramos",
+                "última","últimas","último","últimos"]
 
 def clear_text_lemma(testo, language):
     """
@@ -157,6 +150,8 @@ def clear_text_lemma(testo, language):
     for token in doc:
         rev.append(token.lemma_)
 
+    if language =='es':
+        stopwords = stopwords_es
     for word in list(rev):  # iterating on a copy since removing will mess things up
         if word in stopwords:
             rev.remove(word)
@@ -396,3 +391,28 @@ def compute_identity_terms(data, language="en", id_label = 'id_EXIST', label = '
 
     with open('./Data/IdentityTerms.txt', 'w') as f:
         f.write(str(identity_terms))
+"""
+def main(data, input_lang):
+    compute_identity_terms(data, input_lang)
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <input_string>")
+        sys.exit(1)
+    
+    df = pd.read_json("../data/EXIST2024/EXIST_2024_Memes_Dataset/training/EXIST2024_training.json", orient='index')
+    main(df, sys.argv[1])
+"""
+
+def main(data, args):
+    compute_identity_terms(data, args.input_lang, args.id_label, args.label)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Description of your script")
+    parser.add_argument("input_lang", help="Input language")
+    parser.add_argument("--id_label", help="Optional argument 1: id_label", default='id_EXIST')
+    parser.add_argument("--label", help="Optional argument 2: label", default='labels_task4')
+    args = parser.parse_args()
+    df = pd.read_json("../data/EXIST2024/EXIST_2024_Memes_Dataset/training/EXIST2024_training.json", orient='index')
+    main(df, args)

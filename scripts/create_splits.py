@@ -4,6 +4,44 @@ import argparse
 import pandas as pd
 from tqdm import tqdm
 
+LABEL_MAPPINGS = {
+    # -- task 4: sexism detection in memes
+    'task4': {
+        'NO': 0,
+        'YES': 1
+    },
+
+    # -- task 5: source detection in memes
+    'task5': {
+        'DIRECT': 0,
+        'JUDGEMENTAL': 1,
+    },
+
+    # -- task 6: sexism categorization in memes
+    'task6': {
+        'IDEOLOGICAL AND INEQUALITY': 0,
+        'STEREOTYPING AND DOMINANCE': 1,
+        'OBJECTIFICATION': 2,
+        'SEXUAL VIOLENCE': 3,
+        'MISOGYNY AND NON-SEXUAL VIOLENCE': 4,
+    }
+
+}
+
+def get_labels(task_id, labels):
+    label_mapping = LABEL_MAPPINGS[task_id]
+    mapped_labels = list( map(label_mapping.get, labels)  )
+
+    # TODO: special case for task5 and task6
+    if task_id in ['task4']:
+        count_zeros = mapped_labels.count(0)
+        count_ones = mapped_labels.count(1)
+
+        hard_label = 0 if count_zeros > count_ones else 1
+        soft_label = count_ones / len(labels) if count_ones > 0 else 0
+
+        return hard_label, soft_label
+
 if __name__ == "__main__":
 
     # Run example: python scripts/create_splits.py --split-dir ./data/EXIST2024/EXIST_2024_Memes_Dataset/training/ --split-name EXIST2024_training.json --embeddings-dir ./data/EXIST2024/embeddings/ --output-path ./splits/EXIST2024/training.json
@@ -38,6 +76,11 @@ if __name__ == "__main__":
         original_split[image_id]['img_emb_path'] = os.path.join(args.embeddings_dir, 'image', f'{image_id}.npz')
         original_split[image_id]['text_emb_path'] = os.path.join(args.embeddings_dir, 'text', f'{image_id}.npz')
         original_split[image_id]['caption_emb_path'] = os.path.join(args.embeddings_dir, 'caption', f'{image_id}.npz')
+
+        for task_id in ['task4']: # TODO: task5 and task6
+            hard_label, soft_label = get_labels(task_id, original_split[image_id][f'labels_{task_id}'])
+            original_split[image_id][f'hard_label_{task_id}'] = hard_label
+            original_split[image_id][f'soft_label_{task_id}'] = soft_label
 
     # -- write new training set json
     with open(args.output_path, 'w') as f:

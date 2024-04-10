@@ -1,0 +1,40 @@
+# -- modalities related
+modalities:
+ - caption
+ - image
+ - text
+
+# -- languages related
+languages:
+ - en
+ - es
+
+# -- model architecture related
+model: pink_transformer
+model_conf:
+  input_dim: 512
+  latent_dim: 256
+  n_head: 4
+  num_encoder_layers: 4
+  dim_feedforward: 2048
+  modality_masking_prob: 0.0
+
+# -- training settings related
+training_settings:
+  optimizer: 'adamw'
+  scheduler: 'onecycle'
+  anneal_strategy: 'linear'
+  loss_criterion: 'cross_entropy'
+  epochs: 20
+  batch_size: 16
+  learning_rate: 0.0004
+  num_workers: 8
+
+# -- task related
+num_classes: 2
+class_names:
+ - sexism
+ - no-sexism
+report_class: 'sexism'
+task: 'hard_label_task4'
+device: 'cuda'
