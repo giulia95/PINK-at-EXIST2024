@@ -1,8 +1,8 @@
 # -- modalities related
 modalities:
- - caption
- - image
- - text
+ - clip_caption
+ - clip_image
+ - clip_text
 
 # -- languages related
 languages:

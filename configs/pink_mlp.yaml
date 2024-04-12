@@ -1,8 +1,8 @@
 # -- modalities related
 modalities:
- - caption
- - image
- - text
+ - clip_caption
+ - clip_image
+ - clip_text
 
 # -- languages related
 languages:
@@ -26,13 +26,17 @@ training_settings:
   epochs: 20
   batch_size: 8
   learning_rate: 0.0005
-  num_workers: 8
+  num_workers: 6
 
 # -- task related
-num_classes: 2
+num_classes: 7
 class_names:
- - sexism
- - no-sexism
-report_class: 'sexism'
-task: 'hard_label_task4'
+ - 0.0
+ - 0.1666
+ - 0.3333
+ - 0.5
+ - 0.6666
+ - 0.8333
+ - 1.0
+task: 'soft_label_task4'
 device: 'cuda'

@@ -39,6 +39,8 @@ def get_labels(task_id, labels):
 
         hard_label = 0 if count_zeros > count_ones else 1
         soft_label = count_ones / len(labels) if count_ones > 0 else 0
+        # -- trick to normalize the soft labels to allocate the actual integers labels for the model
+        soft_label = float(str(soft_label)[:6])
 
         return hard_label, soft_label
 
@@ -67,22 +69,23 @@ if __name__ == "__main__":
     caption_df = pd.read_csv('data/EXIST2024/EXIST_2024_Memes_Dataset/blip_captions.csv', sep="\t")
 
     # -- iterating samples
-    for image_id in tqdm(original_split.keys()):
-        original_split[image_id]['image_path'] = os.path.join(args.split_dir, original_split[image_id]['path_memes'])
+    new_split = []
+    for sample_id in tqdm(original_split.keys()):
+        lang = original_split[sample_id]['lang']
+        # image_path = os.path.join(args.split_dir, original_split[sample_id]['path_memes'])
 
-        # TODO: replace this line with the code adequate to the previous todo comment
-        original_split[image_id]['blip_caption'] = caption_df.loc[caption_df['image_name'] == image_id]['caption_free'].values[0].strip()
+        clip_image_emb_path = os.path.join(args.embeddings_dir, 'image', f'{sample_id}.npz')
+        clip_text_emb_path = os.path.join(args.embeddings_dir, 'text', f'{sample_id}.npz')
+        clip_caption_emb_path = os.path.join(args.embeddings_dir, 'caption', f'{sample_id}.npz')
 
-        original_split[image_id]['img_emb_path'] = os.path.join(args.embeddings_dir, 'image', f'{image_id}.npz')
-        original_split[image_id]['text_emb_path'] = os.path.join(args.embeddings_dir, 'text', f'{image_id}.npz')
-        original_split[image_id]['caption_emb_path'] = os.path.join(args.embeddings_dir, 'caption', f'{image_id}.npz')
+        # text = original_split[sample_id]['text']
+        # blip_caption = caption_df.loc[caption_df['image_name'] == sample_id]['caption_free'].values[0].strip()
 
-        for task_id in ['task4']: # TODO: task5 and task6
-            hard_label, soft_label = get_labels(task_id, original_split[image_id][f'labels_{task_id}'])
-            original_split[image_id][f'hard_label_{task_id}'] = hard_label
-            original_split[image_id][f'soft_label_{task_id}'] = soft_label
+        hard_label_task4, soft_label_task4 = get_labels('task4', original_split[sample_id]['labels_task4'])
 
-    # -- write new training set json
-    with open(args.output_path, 'w') as f:
-        json.dump(original_split, f, indent=2)
+        # new_split.append( (sample_id, lang, image_path, clip_image_emb_path, clip_text_emb_path, clip_caption_emb_path, hard_label_task4, soft_label_task4, text, blip_caption) )
+        new_split.append( (sample_id, lang, clip_image_emb_path, clip_text_emb_path, clip_caption_emb_path, hard_label_task4, soft_label_task4) )
 
+    # new_split = pd.DataFrame(new_split, columns=['sample_id', 'lang', 'image_path', 'clip_image_emb_path', 'clip_text_emb_path', 'clip_caption_emb_path', 'hard_label_task4', 'soft_label_task4', 'text', 'blip_caption'])
+    new_split = pd.DataFrame(new_split, columns=['sample_id', 'lang', 'clip_image_emb_path', 'clip_text_emb_path', 'clip_caption_emb_path', 'hard_label_task4', 'soft_label_task4'])
+    new_split.to_csv(args.output_path, sep='\t', index=False)

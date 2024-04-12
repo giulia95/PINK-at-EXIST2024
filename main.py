@@ -1,6 +1,9 @@
 import os
 import yaml
+import torch
+import random
 import argparse
+import numpy as np
 from tqdm import tqdm
 from pathlib import Path
 from colorama import Fore
@@ -34,7 +37,7 @@ def train():
 
 def evaluate():
     model.eval()
-    eval_stats = {'logits': [], 'probs': [], 'preds': [], 'labels': [], 'loss': 0.0}
+    eval_stats = {'logits': [], 'probs': [], 'preds': [], 'labels': [], 'loss': 0.0, 'acc': 0.0}
 
     with torch.no_grad():
         for batch in tqdm(val_loader, position=0, leave=True, file=sys.stdout, bar_format="{l_bar}%s{bar:10}%s{r_bar}" % (Fore.BLUE, Fore.RESET)):
@@ -46,7 +49,10 @@ def evaluate():
             # -- gathering statistics
             eval_stats['loss'] += model_output['loss'].item()
             for eval_key in eval_stats.keys():
-                eval_stats[eval_key] += model_output[eval_key].detach().cpu().numpy().tolist()
+                if eval_key == 'acc':
+                    eval_stats[eval_key] += accuracy_score(model_output['preds'].detach().cpu().numpy(), model_output['labels'].detach().cpu().numpy())
+                else:
+                    eval_stats[eval_key] += model_output[eval_key].detach().cpu().numpy().tolist()
 
     # -- metric report
     eval_metrics = classification_report(
@@ -55,21 +61,25 @@ def evaluate():
         target_names=config.class_names,
         output_dict=True,
     )
-
     eval_stats['loss'] = eval_stats['loss'] / len(val_loader)
-    eval_stats['f1-score'] = eval_metrics[config.report_class]['f1-score']
 
     return eval_stats
 
 if __name__ == "__main__":
+
+    # -- setting seed
+    random.seed(42)
+    np.random.seed(42)
+    torch.manual_seed(42)
+    torch.cuda.manual_seed_all(42)
 
     # -- command-line arguments
     parser = argparse.ArgumentParser(description='Training and/or evaluation of models for EXIST2024.',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('--config', required=True, type=str, help='Configuration file to build, train, and evaluate the model')
-    parser.add_argument('--training-dataset', required=True, type=str, help='JSON file representing the training dataset')
-    parser.add_argument('--validation-dataset', required=True, type=str, help='JSON file representing the validation dataset')
+    parser.add_argument('--training-dataset', required=True, type=str, help='CSV file representing the training dataset')
+    parser.add_argument('--validation-dataset', required=True, type=str, help='CSV file representing the validation dataset')
     parser.add_argument('--mode', default='both', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument('--load-checkpoint', default='', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument("--yaml-overrides", metavar="CONF:[KEY]:VALUE", nargs='*', help="Set a number of conf-key-value pairs for modifying the yaml config file on the fly.")
@@ -110,7 +120,7 @@ if __name__ == "__main__":
 
             # -- saving model checkpoint
             save_checkpoint(model, args.output_dir, f'epoch_{str(epoch).zfill(3)}')
-            print(f"Epoch {epoch}: TRAIN LOSS={round(train_stats['loss'],4)} | TRAIN ACC={round(train_stats['acc'],2)}% || VAL LOSS={round(val_stats['loss'],4)} | VAL F1={round(val_stats['f1-score'],2)}%")
+            print(f"Epoch {epoch}: TRAIN LOSS={round(train_stats['loss'],4)} | TRAIN ACC={round(train_stats['acc'],2)}% || VAL LOSS={round(val_stats['loss'],4)} | VAL ACC={round(val_stats['acc'],2)}%")
 
     if args.mode in ['evaluation', 'both']:
         val_loader = get_dataloader(config, args.validation_dataset, is_training=False)
@@ -123,7 +133,7 @@ if __name__ == "__main__":
         eval_report = classification_report(
             val_stats['preds'],
             val_stats['labels'],
-            target_names=config.class_names,
         )
+        #     target_names=config.class_names,
         print()
         print(eval_report)
