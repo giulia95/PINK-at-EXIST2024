@@ -5,6 +5,7 @@ techniques such as lower case conversion and special character removal. It consi
 10 times in training data.
 
 Requires Spacy stanza: "pip install spacy-stanza"
+TODO: see bug: https://github.com/explosion/spacy-stanza/issues/32
 """
 
 import pandas as pd
@@ -16,7 +17,9 @@ import spacy_stanza
 import re
 import os
 from tqdm import tqdm
-from . import preprocessing
+import preprocessing
+import os
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 # _______________________________________________UTILS_______________________________________________________
 # stopwords redefined to keep potentially sexism/misoginy-related terms
@@ -128,15 +131,13 @@ stopwords_es = ["a","actualmente","acuerdo","adelante","ademas","además","adred
                 "w","x","y","ya","yo","z","éramos",
                 "última","últimas","último","últimos"]
 
-def clear_text_lemma(testo, language):
+def clear_text_lemma(testo, language, nlp):
     """
     Remove punctuation, brings to lowercase, remove special char, apply Stanza lemmatization
 
     :param testo: text to process
     :return: processed text
-    """
-    stanza.download(language)
-    nlp = spacy_stanza.load_pipeline(language)
+    """    
 
     rev = []
 
@@ -174,34 +175,35 @@ def frequent_words(text, n):
     for x in counter.most_common():
         if x[1] >= n:
             frequent_words.append(x[0])
-        else:
-            print(x)
+        #else:
+        #    print(x)
 
     return frequent_words
 
-def words_selection(data, id_col, language):
+def words_selection(data, id_col, language, nlp):
     # _____________________________________________Dictionary ________________________________________________
     # dictionary includes words that appear at least 10 times
 
     dictionary = []
-
+    
     for index, row in tqdm(data.iterrows()):
-        data.loc[index, 'clear text'] = str(clear_text_lemma(row[2]), language).replace("'", '')\
+        data.loc[index, 'clear text'] = str(clear_text_lemma(row[2], language, nlp)).replace("'", '')\
                                     .replace(",", '').replace("[",'').replace("]", '')\
                                     .replace("\"", '')
     dictionary = frequent_words(data['clear text'], 10)
 
     # Word dataframe: a column for each word in the dictionary, with a boolean value to represent its presence in the meme
-    word = pd.DataFrame(columns=['file_name', 'misogynous'] + dictionary)
+    word = pd.DataFrame(columns=['id_EXIST'] + dictionary)
 
     for index, row in tqdm(data.iterrows()):
-        #new_line = list(data.loc[index, ['file_name', 'misogynous']])
-        word = word.append({'file_name': data.loc[index, 'file_name'],
-                            'misogynous': data.loc[index, 'misogynous']}, ignore_index=True)
+        new_line = list(data.loc[index, [ 'id_EXIST']])
+        #word = pd.concat([word, pd.DataFrame.from_dict({'meme': [data.loc[index, 'meme']], 'id_EXIST': [data.loc[index, 'id_EXIST']]})], ignore_index=True)
+        word.loc[len(word)] = [data.loc[index, 'id_EXIST']]  + [None] * (len(word.columns) - 1)  #pd.DataFrame({'meme': [data.loc[index, 'meme']], 'id_EXIST': [data.loc[index, 'id_EXIST']]})], ignore_index=False)
+        #word = word.append({'meme': data.loc[index, 'meme'],'id_EXIST': data.loc[index, 'id_EXIST']}, ignore_index=True)
         for w in row['clear text'].split():
             if w in dictionary:
-                # print(w)
-                word.loc[word['file_name'] == data.loc[index, 'file_name'], w] = 1
+                #print(w)
+                word.loc[word['id_EXIST'] == data.loc[index, 'id_EXIST'], w] = 1
 
     data.columns.values[3] = "meme_id"
     word = pd.DataFrame(columns=[id_col] + dictionary)
@@ -211,7 +213,7 @@ def words_selection(data, id_col, language):
         word.loc[len(word)] = [data.loc[index, id_col]]  + [None] * (len(word.columns) - 1) 
         for w in row['clear text'].split():
             if w in dictionary:
-                print(w)
+                #print(w)
                 word.loc[word[id_col] == data.loc[index, id_col], w] = 1
 
     word.to_csv('./IdentityTerms/lemma_presence_stanza.csv', index=False)
@@ -257,8 +259,8 @@ def compute_evidences_on_tags(word, condizionate):
                 tags.append(word.columns[i])
                 eq = eq + word.columns[i] + ' '
         eq = eq + ')'
-        print('\n')
-        print(eq)
+        #print('\n')
+        #print(eq)
 
         # values to be normalized
         value_pos = 0.5
@@ -282,11 +284,11 @@ def compute_evidences_on_tags(word, condizionate):
             eq = eq + i + ' '
         eq = eq + ')'
 
-        print(value_pos)
+        #print(value_pos)
         #result = value_pos
-        print(eq)
-        print(value_neg)
-        return calcolate
+        #print(eq)
+        #print(value_neg)
+    return calcolate
 
 def evaluate_tags_removal(word, condizionate):
     # Remove tags P(M|tags-{tag})
@@ -294,7 +296,7 @@ def evaluate_tags_removal(word, condizionate):
     rimozioneTag = pd.DataFrame(columns=['meme', 'tagTolto', 'eq', 'valore'])
 
     for index, row in word.iterrows():
-        print('\n')
+        #print('\n')
         tags = []
 
         for i in range(1, len(word.columns)-1):
@@ -319,14 +321,14 @@ def evaluate_tags_removal(word, condizionate):
                 value_neg = value_neg * condizionate.loc[1, x]
 
             eq = eq + ')'
-            print(eq)
-            print(conto)
+            #print(eq)
+            #print(conto)
 
             # Normalization
             somma = value_pos + value_neg
             value_pos = value_pos / somma
             value_neg = value_neg / somma
-            print(value_pos)
+            #print(value_pos)
             rimozioneTag.loc[len(rimozioneTag)] = [index + 1, tag, eq,  value_pos]
 
     rimozioneTag = rimozioneTag.reset_index(drop=True)
@@ -336,11 +338,11 @@ def compute_meme_scores(word, contitionate):
     # ________________________________________ Meme scores___________________________________________________
     calcolate =  compute_evidences_on_tags(word, contitionate)
     rimozioneTag = evaluate_tags_removal(word, contitionate)
-    
+
     # valMeme-value
     rimozioneTag['score'] = 0
     for index, row in rimozioneTag.iterrows():
-        rimozioneTag.loc[index, 'score'] = calcolate.loc[calcolate['meme'] == row[0], 'valore'].values[0] - row[3]
+        rimozioneTag.loc[index, 'score'] =  calcolate.loc[calcolate['meme'] == row.meme, 'valore'].values[0] - row.valore
 
     # Compute mean per tag and save in dataframe
     scores_df = pd.DataFrame(columns=['word', 'score'])
@@ -355,7 +357,8 @@ def compute_meme_scores(word, contitionate):
     scores_df.to_csv('./IdentityTerms/scores_Lemma_Stanza.csv', index=False)
     return scores_df
 
-def compute_identity_terms(data, language="en", id_label = 'id_EXIST', label = 'labels_task4'):
+def compute_identity_terms(data, language="en", id_label = 'id_EXIST', label = 'labels_task4', nlp=spacy_stanza):
+    nlp = spacy_stanza.load_pipeline(language)
     data = data.loc[data['lang']==language,:]
     
     if not os.path.exists('./IdentityTerms/'):
@@ -364,7 +367,9 @@ def compute_identity_terms(data, language="en", id_label = 'id_EXIST', label = '
     # ____________________________________________________Load Data______________________________________________
     data['clear text'] = ''
 
-    data, word = words_selection(data, id_label, language)
+    #data, word = words_selection(data, id_label, language, nlp)
+    word = pd.read_csv('./IdentityTerms/lemma_presence_stanza.csv')
+    word = word.fillna(0)
 
     data['hard_label'] = data[label].apply(lambda x: preprocessing.most_frequent(x)[0])
     data['hard_label'] = data['hard_label'].map({'YES': 1, 'NO': 0})
@@ -389,7 +394,7 @@ def compute_identity_terms(data, language="en", id_label = 'id_EXIST', label = '
 
     identity_terms = [identity_misogynous, identity_non_misogynous]
 
-    with open('./Data/IdentityTerms.txt', 'w') as f:
+    with open('./IdentityTerms/IdentityTerms.txt', 'w') as f:
         f.write(str(identity_terms))
 """
 def main(data, input_lang):
@@ -406,6 +411,7 @@ if __name__ == "__main__":
 """
 
 def main(data, args):
+    stanza.download(args.input_lang)
     compute_identity_terms(data, args.input_lang, args.id_label, args.label)
 
 if __name__ == "__main__":
