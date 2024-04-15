@@ -28,7 +28,7 @@ def train():
         optimizer.zero_grad()
 
         train_stats['loss'] += model_output['loss'].item()
-        train_stats['acc'] += accuracy_score(model_output['preds'].detach().cpu().numpy(), model_output['labels'].detach().cpu().numpy())
+        train_stats['acc'] += 0.0 # accuracy_score(model_output['preds'].detach().cpu().numpy(), model_output['labels'].detach().cpu().numpy())
 
     train_stats['loss'] = train_stats['loss'] / len(train_loader)
     train_stats['acc'] = (train_stats['acc'] / len(train_loader)) * 100.0
@@ -50,17 +50,10 @@ def evaluate():
             eval_stats['loss'] += model_output['loss'].item()
             for eval_key in eval_stats.keys():
                 if eval_key == 'acc':
-                    eval_stats[eval_key] += accuracy_score(model_output['preds'].detach().cpu().numpy(), model_output['labels'].detach().cpu().numpy())
+                    eval_stats[eval_key] += 0.0 # accuracy_score(model_output['preds'].detach().cpu().numpy(), model_output['labels'].detach().cpu().numpy())
                 else:
                     eval_stats[eval_key] += model_output[eval_key].detach().cpu().numpy().tolist()
 
-    # -- metric report
-    eval_metrics = classification_report(
-        eval_stats['preds'],
-        eval_stats['labels'],
-        target_names=config.class_names,
-        output_dict=True,
-    )
     eval_stats['loss'] = eval_stats['loss'] / len(val_loader)
 
     return eval_stats
@@ -83,6 +76,7 @@ if __name__ == "__main__":
     parser.add_argument('--mode', default='both', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument('--load-checkpoint', default='', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument("--yaml-overrides", metavar="CONF:[KEY]:VALUE", nargs='*', help="Set a number of conf-key-value pairs for modifying the yaml config file on the fly.")
+    parser.add_argument("--use-modalities", nargs='+', default=['all_modalities'], help="It allows you to choose which modalities will be used.")
     parser.add_argument('--output-dir', required=True, type=str, help='Path where to save model checkpoints and predictions')
     parser.add_argument('--output-name', required=True, type=str, help='Choose between: "validation", or "test"')
 
@@ -94,6 +88,17 @@ if __name__ == "__main__":
         config = yaml.safe_load(f)
     config = override_yaml(config, args.yaml_overrides)
     config = argparse.Namespace(**config)
+
+    if 'all_modalities' not in args.use_modalities:
+        new_modalities = []
+        for modality in config.modalities:
+            if modality['name'] in args.use_modalities:
+                new_modalities.append(modality)
+
+        config.modalities = new_modalities
+        config.use_modalities = args.use_modalities
+
+    assert len(config.modalities) > 0, f'Ensure you specified the modalities you expected to use'
 
     # -- building model architecture
     model = build_model(config)

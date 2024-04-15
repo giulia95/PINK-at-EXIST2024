@@ -10,25 +10,30 @@ class PinkTransformer(torch.nn.Module):
     self.args = args
 
     # 0. Embedding Projection Layer
-    self.emb_projection = torch.nn.Linear(
-        args.model_conf['input_dim'],
-        args.model_conf['latent_dim'],
-        bias=False,
-    )
+    self.emb_projection = torch.nn.ModuleDict({
+        modality['name']: LinearModalityEncoder(modality['input_dim'], args.model_conf['latent_dim'])
+        for modality in self.args.modalities
+    })
 
     # 1. Modality Embedding Layer
-    self.modality_map = {mod_name:mod_id for mod_id, mod_name in enumerate(sorted(args.modalities))}
-    self.modality_emb = torch.nn.Embedding(
-        len(args.modalities),
-        args.model_conf['latent_dim'],
-    )
+    self.modality_map = {modality['name']:id for id, modality in enumerate(sorted(self.args.modalities, key = lambda x: x['name']))}
+    if args.model_conf['use_modality_emb']:
+        self.modality_emb = torch.nn.Embedding(
+            len(args.modalities),
+            args.model_conf['latent_dim'],
+        )
+    else:
+        self.modality_emb = None
 
     # 2. Language Embedding Layer
     self.language_map = {lang_name:lang_id for lang_id, lang_name in enumerate(sorted(args.languages))}
-    self.language_emb = torch.nn.Embedding(
-        len(args.languages),
-        args.model_conf['latent_dim'],
-    )
+    if args.model_conf['use_language_emb']:
+        self.language_emb = torch.nn.Embedding(
+            len(args.languages),
+            args.model_conf['latent_dim'],
+        )
+    else:
+        self.language_emb = None
 
     # 3. Multi-Modal Multi-Lingual Transformer Backbone
     self.transformer_backbone = torch.nn.TransformerEncoder(
@@ -36,6 +41,7 @@ class PinkTransformer(torch.nn.Module):
             d_model=args.model_conf['latent_dim'],
             nhead=args.model_conf['n_head'],
             dim_feedforward=args.model_conf['dim_feedforward'],
+            dropout=args.model_conf['dropout'],
             activation=torch.nn.SiLU(),
             batch_first = True,
         ),
@@ -65,15 +71,17 @@ class PinkTransformer(torch.nn.Module):
       data = batch[modality_id] # -- (batch, 1, input_dim)
 
       # 0. Embedding Projection Layer
-      data = self.emb_projection(data) # -- (batch, 1, latent_dim)
+      data = self.emb_projection[modality_id](data) # -- (batch, 1, latent_dim)
 
       # 1. Modality Embedding Layer
-      modality_id = torch.LongTensor([self.modality_map[modality_id]]).to(data.device)
-      data = data + self.modality_emb(modality_id)
+      if self.modality_emb is not None:
+          modality_id = torch.LongTensor([self.modality_map[modality_id]]).to(data.device)
+          data = data + self.modality_emb(modality_id)
 
       # 2. Language Embedding Layer
-      language_ids = torch.LongTensor(list( map(self.language_map.get, batch['language']) )).to(data.device)
-      data = data + self.language_emb(language_ids).unsqueeze(1)
+      if self.language_emb is not None:
+          language_ids = torch.LongTensor(list( map(self.language_map.get, batch['language']) )).to(data.device)
+          data = data + self.language_emb(language_ids).unsqueeze(1)
 
       all_modalities.append( data )
 
@@ -98,3 +106,27 @@ class PinkTransformer(torch.nn.Module):
     model_output['loss'] = self.loss_criterion(logits, batch['label'])
 
     return model_output
+
+class LinearModalityEncoder(torch.nn.Module):
+    def __init__(self, input_dim, output_dim):
+        super(LinearModalityEncoder, self).__init__()
+
+        # 0. Batch Normalization
+        self.batch_norm = torch.nn.BatchNorm1d(
+            input_dim,
+        )
+
+        # 1. Linear Projection
+        self.projection = torch.nn.Linear(
+            input_dim,
+            output_dim,
+            bias=False,
+        )
+
+    def forward(self, x):
+        x = self.batch_norm(x.permute(0,2,1)).permute(0,2,1)
+        x = self.projection(x)
+
+        return x
+
+

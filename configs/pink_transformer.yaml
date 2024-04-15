@@ -1,8 +1,21 @@
 # -- modalities related
 modalities:
- - clip_caption
- - clip_image
- - clip_text
+ - name: clip_caption
+   input_dim: 512
+
+ - name: clip_image
+   input_dim: 512
+
+ - name: clip_text
+   input_dim: 512
+
+ - name: bert_caption
+   input_dim: 768
+
+ - name: bert_text
+   input_dim: 768
+
+use_modalities: [clip_caption, clip_image, clip_text, bert_caption, bert_text]
 
 # -- languages related
 languages:
@@ -12,11 +25,13 @@ languages:
 # -- model architecture related
 model: pink_transformer
 model_conf:
-  input_dim: 512
   latent_dim: 256
   n_head: 4
-  num_encoder_layers: 4
+  num_encoder_layers: 2
   dim_feedforward: 2048
+  dropout: 0.1
+  use_modality_emb: true
+  use_language_emb: true
   modality_masking_prob: 0.0
 
 # -- training settings related
@@ -28,7 +43,7 @@ training_settings:
   epochs: 20
   batch_size: 8
   learning_rate: 0.0005
-  num_workers: 8
+  num_workers: 6
 
 # -- task related
 num_classes: 2
@@ -36,5 +51,5 @@ class_names:
  - sexism
  - no-sexism
 report_class: 'sexism'
-task: 'hard_label_task4'
+task: 'soft_label_task4'
 device: 'cuda'

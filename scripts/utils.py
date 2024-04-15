@@ -6,16 +6,6 @@ import pickle
 from models import PinkMLP, PinkTransformer
 from datasets import PinkDataset
 
-SOFT_LABEL_TASK4_MAPPING = {
-    0.0: 0,
-    0.1666: 1,
-    0.3333: 2,
-    0.5: 3,
-    0.6666: 4,
-    0.8333: 5,
-    1.0: 6
-}
-
 def build_model(config):
     if config.model == 'pink_mlp':
         model = PinkMLP(config).to(config.device)

@@ -3,6 +3,8 @@ modalities:
  - clip_caption
  - clip_image
  - clip_text
+ - bert_caption
+ - bert_text
 
 # -- languages related
 languages:
@@ -12,9 +14,11 @@ languages:
 # -- model architecture related
 model: pink_mlp
 model_conf:
-  input_dim: 512
   latent_dim: 256
   mlp_dim: 1024
+  dropout: 0.1
+  use_modality_emb: true
+  use_language_emb: true
   modality_masking_prob: 0.0
 
 # -- training settings related
@@ -29,14 +33,9 @@ training_settings:
   num_workers: 6
 
 # -- task related
-num_classes: 7
+num_classes: 2
 class_names:
- - 0.0
- - 0.1666
- - 0.3333
- - 0.5
- - 0.6666
- - 0.8333
- - 1.0
+ - sexism
+ - no-sexism
 task: 'soft_label_task4'
 device: 'cuda'
