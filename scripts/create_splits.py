@@ -74,18 +74,18 @@ if __name__ == "__main__":
         lang = original_split[sample_id]['lang']
         # image_path = os.path.join(args.split_dir, original_split[sample_id]['path_memes'])
 
-        clip_image_emb_path = os.path.join(args.embeddings_dir, 'image', f'{sample_id}.npz')
-        clip_text_emb_path = os.path.join(args.embeddings_dir, 'text', f'{sample_id}.npz')
-        clip_caption_emb_path = os.path.join(args.embeddings_dir, 'caption', f'{sample_id}.npz')
+        clip_image_emb_path = os.path.join(args.embeddings_dir, 'clip_image', f'{sample_id}.npz')
+        clip_text_emb_path = os.path.join(args.embeddings_dir, 'clip_text', f'{sample_id}.npz')
+        clip_caption_emb_path = os.path.join(args.embeddings_dir, 'clip_caption', f'{sample_id}.npz')
+        bert_text_emb_path = os.path.join(args.embeddings_dir, 'bert_text', f'{sample_id}.npz')
+        bert_caption_emb_path = os.path.join(args.embeddings_dir, 'bert_caption', f'{sample_id}.npz')
 
         # text = original_split[sample_id]['text']
         # blip_caption = caption_df.loc[caption_df['image_name'] == sample_id]['caption_free'].values[0].strip()
 
         hard_label_task4, soft_label_task4 = get_labels('task4', original_split[sample_id]['labels_task4'])
 
-        # new_split.append( (sample_id, lang, image_path, clip_image_emb_path, clip_text_emb_path, clip_caption_emb_path, hard_label_task4, soft_label_task4, text, blip_caption) )
-        new_split.append( (sample_id, lang, clip_image_emb_path, clip_text_emb_path, clip_caption_emb_path, hard_label_task4, soft_label_task4) )
+        new_split.append( (sample_id, lang, clip_image_emb_path, clip_text_emb_path, clip_caption_emb_path, bert_text_emb_path, bert_caption_emb_path, hard_label_task4, soft_label_task4) )
 
-    # new_split = pd.DataFrame(new_split, columns=['sample_id', 'lang', 'image_path', 'clip_image_emb_path', 'clip_text_emb_path', 'clip_caption_emb_path', 'hard_label_task4', 'soft_label_task4', 'text', 'blip_caption'])
-    new_split = pd.DataFrame(new_split, columns=['sample_id', 'lang', 'clip_image_emb_path', 'clip_text_emb_path', 'clip_caption_emb_path', 'hard_label_task4', 'soft_label_task4'])
+    new_split = pd.DataFrame(new_split, columns=['sample_id', 'lang', 'clip_image_emb_path', 'clip_text_emb_path', 'clip_caption_emb_path', 'bert_text_emb_path', 'bert_caption_emb_path', 'hard_label_task4', 'soft_label_task4'])
     new_split.to_csv(args.output_path, sep='\t', index=False)

@@ -1,10 +1,21 @@
 # -- modalities related
 modalities:
- - clip_caption
- - clip_image
- - clip_text
- - bert_caption
- - bert_text
+ - name: clip_caption
+   input_dim: 512
+
+ - name: clip_image
+   input_dim: 512
+
+ - name: clip_text
+   input_dim: 512
+
+ - name: bert_caption
+   input_dim: 768
+
+ - name: bert_text
+   input_dim: 768
+
+use_modalities: [clip_caption, clip_image, clip_text, bert_caption, bert_text]
 
 # -- languages related
 languages:

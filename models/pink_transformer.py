@@ -50,10 +50,12 @@ class PinkTransformer(torch.nn.Module):
     )
 
     # 4. Output Classification
-    self.classifier = torch.torch.nn.Linear(
-        args.model_conf['latent_dim'],
-        args.num_classes,
-        bias=False,
+    self.classifier = torch.nn.Sequential(
+        torch.torch.nn.Linear(
+            args.model_conf['latent_dim'],
+            args.num_classes,
+            bias=False,
+        ),
     )
 
     # 5. Computing Loss Function
@@ -99,6 +101,7 @@ class PinkTransformer(torch.nn.Module):
     output = Reduce('b n d -> b d', 'mean')(output)
     logits = self.classifier(output)
 
+    model_output['sample_id'] = batch['sample_id']
     model_output['logits'] = logits
     model_output['probs'] = torch.nn.functional.softmax(logits, dim = -1)
     model_output['preds'] = logits.argmax(dim = -1)

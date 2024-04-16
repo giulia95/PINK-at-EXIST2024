@@ -30,8 +30,8 @@ model_conf:
   num_encoder_layers: 2
   dim_feedforward: 2048
   dropout: 0.1
-  use_modality_emb: true
-  use_language_emb: true
+  use_modality_emb: false
+  use_language_emb: false
   modality_masking_prob: 0.0
 
 # -- training settings related

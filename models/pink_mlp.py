@@ -93,6 +93,7 @@ class PinkMLP(torch.nn.Module):
     # 4. Output Classification
     logits = self.classifier(output)
 
+    model_output['sample_id'] = batch['sample_id']
     model_output['logits'] = logits
     model_output['probs'] = torch.nn.functional.softmax(logits, dim = -1)
     model_output['preds'] = logits.argmax(dim = -1)

@@ -5,15 +5,20 @@ import json
 import argparse
 import numpy as np
 from tqdm import tqdm
+import pandas as pd
 
-# Define a function to get BERT sentence embeddings
-def get_bert_embeddings(sentence):
+def get_bert_embeddings(sentence, max_length=512):
     # Tokenize input text
     tokens = tokenizer.tokenize(sentence)
+    # Truncate or pad the sequence to match the maximum sequence length
+    tokens = tokens[:max_length - 2]  # Account for [CLS] and [SEP] tokens
     # Add [CLS] and [SEP] tokens
     tokens = ['[CLS]'] + tokens + ['[SEP]']
     # Convert tokens to vocabulary indices
     input_ids = tokenizer.convert_tokens_to_ids(tokens)
+    # Pad sequences if necessary
+    padding_length = max_length - len(input_ids)
+    input_ids += [tokenizer.pad_token_id] * padding_length
     # Convert input_ids to PyTorch tensor
     input_tensor = torch.tensor([input_ids]).to(device)
     # Forward pass, get hidden states
@@ -63,6 +68,8 @@ if __name__ == "__main__":
 
     parser.add_argument('--split-path', required=True, type=str, help='Path to the JSON representing the dataset split from which the embeddings will be extracted')
     parser.add_argument('--output-dir', required=True, type=str, help='Path where to save the extracted embeddings')
+    parser.add_argument('--type', required=True, type=str, help='Types of embeddings to extract (text, capt or text+capt)')
+
 
     args = parser.parse_args()
 
@@ -86,15 +93,14 @@ if __name__ == "__main__":
         sample = split[sample_id]
 
         # -- extracting embeddings
-        text = sample['text'].strip()
-        #caption = sample['blip_caption'].strip()
-
-        text_emb = get_bert_embeddings(text)
-        #caption_emb = get_bert_embeddings(caption)
-
-        # -- saving embeddings
-        save_embedding(text_emb, os.path.join(args.output_dir, 'BERT-text', f'{sample_id}.npz'))
-        #save_embedding(caption_emb, os.path.join(args.output_dir, 'BERT-caption', f'{sample_id}.npz'))
-
-
+        if args.type != 'capt':
+            text = sample['text'].strip()
+            text_emb = get_bert_embeddings(text)
+            save_embedding(text_emb, os.path.join(args.output_dir, 'BERT-text', f'{sample_id}.npz'))
+        if args.type != 'text':
+            capt_df = pd.read_csv('/home/dgimeno/EXIST2024/PINK-at-EXIST2024/data/EXIST2024/EXIST_2024_Memes_Dataset/blip_caption_train.csv', sep='\t')
+            capt_df['image_name'] = capt_df['image_name'].astype(str)
+            caption = capt_df.loc[capt_df['image_name']==str(sample_id), 'caption_free'].values[0]
+            caption_emb = get_bert_embeddings(caption)
+            save_embedding(caption_emb, os.path.join(args.output_dir, 'BERT-caption', f'{sample_id}.npz'))
 
