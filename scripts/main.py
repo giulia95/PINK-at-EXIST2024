@@ -70,6 +70,12 @@ def evaluate(args, config):
 
 def pipeline(args, config):
 
+    # -- setting seed
+    random.seed(42)
+    np.random.seed(42)
+    torch.manual_seed(42)
+    torch.cuda.manual_seed_all(42)
+
     # -- building model architecture
     global model, optimizer, scheduler, train_loader, val_loader
     model = build_model(config)

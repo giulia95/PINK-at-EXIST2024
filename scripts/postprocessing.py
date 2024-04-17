@@ -1,4 +1,3 @@
-
 import json
 import config
 from itertools import combinations_with_replacement, permutations

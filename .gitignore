@@ -1,6 +1,7 @@
 *.swp
 data/
 exps/
+studies/
 scripts/IdentityTerms/
 
 # Byte-compiled / optimized / DLL files

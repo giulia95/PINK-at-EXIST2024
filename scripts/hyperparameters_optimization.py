@@ -21,17 +21,17 @@ def masking_and_epochs(max_epochs=10):
 
             val_output = pipeline(args, config)
 
-        # Check if this model's accuracy is better than the previous best
-        if val_output['icm-norm'] > best_ICM:
-            best_ICM = val_output['icm-norm']
-            best_epochs = epochs
-            best_masking_percentage = masking_percentage
+            # Check if this model's accuracy is better than the previous best
+            if val_output['icm-norm'] > best_ICM:
+                best_ICM = val_output['icm-norm']
+                best_epochs = epochs
+                best_masking_percentage = masking_percentage
 
-        # Save the best hyperparameters to a text file
-        with open("./best_hyperparameters_masking_epochs.txt", "a") as file:
-            file.write(f"Epochs: {epochs}\n")
-            file.write(f"Masking Percentage: {masking_percentage}\n")
-            file.write(f"ICM-norm: {val_output['icm-norm'] }\n")
+            # Save the best hyperparameters to a text file
+            with open("./best_hyperparameters_masking_epochs.txt", "a") as file:
+                file.write(f"Epochs: {epochs}\n")
+                file.write(f"Masking Percentage: {masking_percentage}\n")
+                file.write(f"ICM-norm: {val_output['icm-norm'] }\n")
 
     # Save the best hyperparameters to a text file
     with open("./best_hyperparameters_masking_epochs.txt", "a") as file:
@@ -41,12 +41,6 @@ def masking_and_epochs(max_epochs=10):
         file.write(f"ICM-norm: {best_ICM}\n")
 
 if __name__ == "__main__":
-
-    # -- setting seed
-    random.seed(42)
-    np.random.seed(42)
-    torch.manual_seed(42)
-    torch.cuda.manual_seed_all(42)
 
     # -- command-line arguments
     parser = argparse.ArgumentParser(description='Training and/or evaluation of models for EXIST2024.',

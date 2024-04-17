@@ -1,0 +1,39 @@
+Epochs: 1
+Masking Percentage: 0.1
+ICM-norm: 0.4472425231030449
+Epochs: 1
+Masking Percentage: 0.2
+ICM-norm: 0.4367943717784472
+Epochs: 1
+Masking Percentage: 0.30000000000000004
+ICM-norm: 0.43764801332775294
+Epochs: 1
+Masking Percentage: 0.4
+ICM-norm: 0.4399109139415544
+Epochs: 1
+Masking Percentage: 0.5
+ICM-norm: 0.44127974245300966
+Epochs: 1
+Masking Percentage: 0.6
+ICM-norm: 0.4572436383764692
+Epochs: 1
+Masking Percentage: 0.7000000000000001
+ICM-norm: 0.44390881801190324
+Epochs: 1
+Masking Percentage: 0.8
+ICM-norm: 0.4490179571126329
+Epochs: 1
+Masking Percentage: 0.9
+ICM-norm: 0.4520940687226995
+Epochs: 1
+Masking Percentage: 1.0
+ICM-norm: 0.4464293121067798
+Epochs: 2
+Masking Percentage: 0.1
+ICM-norm: 0.46792166282420616
+Epochs: 2
+Masking Percentage: 0.2
+ICM-norm: 0.4595469695433116
+Epochs: 2
+Masking Percentage: 0.30000000000000004
+ICM-norm: 0.45228351129279787

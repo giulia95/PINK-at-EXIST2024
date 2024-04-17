@@ -118,8 +118,8 @@ def soft_output_to_json(output_path, out_key, model_output):
             'test_case': 'EXIST2024',
             'id': str(model_output['sample_id'][idx]),
             'value': {
-                'YES': soft_label_postprocessing(sample[-1].item()),
-                'NO': soft_label_postprocessing(sample[0].item(), is_yes=False),
+                'YES': sample[-1].item(), # soft_label_postprocessing(sample[-1].item()),
+                'NO': sample[0].item(), # soft_label_postprocessing(sample[0].item(), is_yes=False),
             }
         })
 
