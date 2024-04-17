@@ -40,8 +40,8 @@ training_settings:
   scheduler: 'onecycle'
   anneal_strategy: 'linear'
   loss_criterion: 'cross_entropy'
-  epochs: 20
-  batch_size: 8
+  epochs: 5
+  batch_size: 16
   learning_rate: 0.0005
   num_workers: 6
 
@@ -51,5 +51,5 @@ class_names:
  - sexism
  - no-sexism
 report_class: 'sexism'
-task: 'soft_label_task4'
+task: 'hard_label_task4'
 device: 'cuda'
