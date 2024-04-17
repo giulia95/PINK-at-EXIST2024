@@ -124,3 +124,43 @@ def pipeline(args, config):
         print(val_output['pyevall-report'].print_report())
 
     return val_output
+
+if __name__ == "__main__":
+
+    # -- command-line arguments
+    parser = argparse.ArgumentParser(description='Training and/or evaluation of models for EXIST2024.',
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    parser.add_argument('--config', required=True, type=str, help='Configuration file to build, train, and evaluate the model')
+    parser.add_argument('--training-dataset', required=True, type=str, help='CSV file representing the training dataset')
+    parser.add_argument('--validation-dataset', required=True, type=str, help='CSV file representing the validation dataset')
+    parser.add_argument('--mode', default='both', type=str, help='Choose between: "training", "evaluation", or "both"')
+    parser.add_argument('--load-checkpoint', default='', type=str, help='Choose between: "training", "evaluation", or "both"')
+    parser.add_argument("--yaml-overrides", metavar="CONF:[KEY]:VALUE", nargs='*', help="Set a number of conf-key-value pairs for modifying the yaml config file on the fly.")
+    parser.add_argument("--use-modalities", nargs='+', default=['all_modalities'], help="It allows you to choose which modalities will be used.")
+    parser.add_argument('--save', default=1, type=int, help='Do you want to save checkpoints and output reports?')
+    parser.add_argument('--output-dir', required=True, type=str, help='Path where to save model checkpoints and predictions')
+    parser.add_argument('--output-name', required=True, type=str, help='Choose between: "validation", or "test"')
+
+    args = parser.parse_args()
+
+    # -- loading configuration file
+    config_file = Path(args.config)
+    with config_file.open('r', encoding='utf-8') as f:
+        config = yaml.safe_load(f)
+    config = override_yaml(config, args.yaml_overrides)
+    config = argparse.Namespace(**config)
+
+    if 'all_modalities' not in args.use_modalities:
+        new_modalities = []
+        for modality in config.modalities:
+            if modality['name'] in args.use_modalities:
+                new_modalities.append(modality)
+
+        config.modalities = new_modalities
+        config.use_modalities = args.use_modalities
+
+    assert len(config.modalities) > 0, f'Ensure you specified the modalities you expected to use'
+
+    ###
+    pipeline(args, config)
