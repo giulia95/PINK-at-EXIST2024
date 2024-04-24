@@ -9,18 +9,14 @@ from os import path
 sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
 
 from datasets import PinkDataset
-from models import PinkMLP, PinkTransformer
+from models import PinkTransformer
 
 from pyevall.utils.utils import PyEvALLUtils
 from pyevall.evaluation import PyEvALLEvaluation
 
 def build_model(config):
-    if config.model == 'pink_mlp':
-        model = PinkMLP(config).to(config.device)
-
-    elif config.model == 'pink_transformer':
+    if config.model == 'pink_transformer':
         model = PinkTransformer(config).to(config.device)
-
     else:
         raise ValueError(f'unknown {config.model} model architecture')
 
@@ -28,7 +24,7 @@ def build_model(config):
 
 def get_dataloader(config, dataset_path, is_training=False):
 
-    dataset = PinkDataset(dataset_path, task_id=config.task, is_training=False)
+    dataset = PinkDataset(dataset_path, task_id=config.task, language_filter=config.language_filter, is_training=False)
     dataloader = torch.utils.data.DataLoader(
         dataset,
         shuffle=is_training,
@@ -113,13 +109,13 @@ def soft_label_postprocessing(prob, is_yes=True):
 
 def soft_output_to_json(output_path, out_key, model_output):
     tojson = []
-    for idx, sample in enumerate(model_output[out_key].detach().cpu().numpy()):
+    for idx, sample in enumerate(model_output[out_key]):
         tojson.append({
             'test_case': 'EXIST2024',
             'id': str(model_output['sample_id'][idx]),
             'value': {
-                'YES': sample[-1].item(), # soft_label_postprocessing(sample[-1].item()),
-                'NO': sample[0].item(), # soft_label_postprocessing(sample[0].item(), is_yes=False),
+                'YES': soft_label_postprocessing(sample[-1]),
+                'NO': soft_label_postprocessing(sample[0], is_yes=False),
             }
         })
 
@@ -134,7 +130,6 @@ def hard_label_postprocessing(probs):
 
     return 'YES' if pred else 'NO'
 
-
 def hard_output_to_json(output_path, out_key, model_output):
     tojson = []
     for idx, sample in enumerate(model_output[out_key]):
@@ -147,7 +142,7 @@ def hard_output_to_json(output_path, out_key, model_output):
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(tojson, f, ensure_ascii=False, indent=2)
 
-def evaluate_model(output_dir, task_id, model_output):
+def evaluate_model(output_dir, task_id, model_output, preds_output_name='preds.json', golds_output_name='golds.json', only_output_json=False):
     '''Implementation for Task 4 in a soft-soft evaluation.
     '''
     # -- creating output directory
@@ -156,23 +151,26 @@ def evaluate_model(output_dir, task_id, model_output):
     output_to_json_func = soft_output_to_json if 'soft' in task_id else hard_output_to_json
 
     # -- creating temporary files
-    prediction_path = os.path.join(output_dir, 'preds.json')
+    prediction_path = os.path.join(output_dir, preds_output_name)
     output_to_json_func(prediction_path, 'probs', model_output)
 
-    gold_path = os.path.join(output_dir, 'golds.json')
+    gold_path = os.path.join(output_dir, golds_output_name)
     output_to_json_func(gold_path, 'labels', model_output)
 
     # -- setting up PyEvALL
-    pyevall = PyEvALLEvaluation()
-    params = dict()
-    params[PyEvALLUtils.PARAM_REPORT] = PyEvALLUtils.PARAM_OPTION_REPORT_EMBEDDED
+    if not only_output_json:
+        pyevall = PyEvALLEvaluation()
+        params = dict()
+        params[PyEvALLUtils.PARAM_REPORT] = PyEvALLUtils.PARAM_OPTION_REPORT_EMBEDDED
 
-    if 'soft' in task_id:
-        metrics=['ICMSoft', 'ICMSoftNorm', 'CrossEntropy']
-    else:
-        metrics=['ICM', 'ICMNorm' ,'FMeasure']
+        if 'soft' in task_id:
+            metrics=['ICMSoft', 'ICMSoftNorm', 'CrossEntropy']
+        else:
+            metrics=['ICM', 'ICMNorm' ,'FMeasure']
 
-    # -- evaluating model results
-    report = pyevall.evaluate(prediction_path, gold_path, metrics, **params)
+        # -- evaluating model results
+        report = pyevall.evaluate(prediction_path, gold_path, metrics, **params)
 
-    return report
+        return report
+
+    return None

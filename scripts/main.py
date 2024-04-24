@@ -41,30 +41,35 @@ def train(args, config):
 
     return train_stats
 
-def evaluate(args, config):
+def evaluate(args, config, eval_loader, test_for_submission=False):
     model.eval()
     eval_output = {'sample_id': [], 'logits': [], 'probs': [], 'preds': [], 'labels': [], 'loss': 0.0}
 
     with torch.no_grad():
-        for batch in tqdm(val_loader, position=0, leave=True, file=sys.stdout, bar_format="{l_bar}%s{bar:10}%s{r_bar}" % (Fore.BLUE, Fore.RESET)):
+        for batch in tqdm(eval_loader, position=0, leave=True, file=sys.stdout, bar_format="{l_bar}%s{bar:10}%s{r_bar}" % (Fore.BLUE, Fore.RESET)):
             batch = {k: v.to(device=config.device, non_blocking=True) if hasattr(v, 'to') else v for k, v in batch.items()}
 
             # -- forward pass
-            model_output = model(batch)
+            model_output = model(batch, test_for_submission=test_for_submission)
 
             # -- gathering statistics
-            eval_output['loss'] += model_output['loss'].item()
+            if not test_for_submission:
+                eval_output['loss'] += model_output['loss'].item()
             for eval_key in eval_output.keys():
+                if test_for_submission and eval_key == 'loss':
+                    continue
                 eval_output[eval_key] += model_output[eval_key].detach().cpu().numpy().tolist()
 
-    report = evaluate_model(args.output_dir, config.task, eval_output)
-    shutil.rmtree(args.output_dir)
+    if not test_for_submission:
+        report = evaluate_model(args.output_dir, config.task, eval_output, only_output_json=test_for_submission)
 
-    eval_output['loss'] = eval_output['loss'] / len(val_loader)
-    eval_output['pyevall-report'] = report
+        eval_output['loss'] = eval_output['loss'] / len(val_loader)
+        eval_output['pyevall-report'] = report
 
-    icm_key = 'ICMSoftNorm' if 'soft' in config.task else 'ICMNorm'
-    eval_output['icm-norm'] = report.report['metrics'][icm_key]['results']['average_per_test_case'] # accuracy_score(model_output['preds'].detach().cpu().numpy(), model_output['labels'].detach().cpu().numpy())
+        icm_key = 'ICMSoftNorm' if 'soft' in config.task else 'ICMNorm'
+        eval_output['icm-norm'] = report.report['metrics'][icm_key]['results']['average_per_test_case'] # accuracy_score(model_output['preds'].detach().cpu().numpy(), model_output['labels'].detach().cpu().numpy())
+    else:
+        report = evaluate_model(args.output_dir, config.task, eval_output, preds_output_name='submission_test_preds.json', golds_output_name='submission_test_golds.json', only_output_json=test_for_submission)
 
     return eval_output
 
@@ -84,6 +89,7 @@ def pipeline(args, config):
 
     # -- loading model checkpoint
     if args.load_checkpoint:
+        checkpoint = torch.load(args.load_checkpoint)
         model.load_state_dict(checkpoint)
 
     # -- training process
@@ -98,7 +104,7 @@ def pipeline(args, config):
 
         for epoch in range(1, config.training_settings['epochs']+1):
             train_stats = train(args, config)
-            val_output = evaluate(args, config)
+            val_output = evaluate(args, config, val_loader)
 
             # -- saving model checkpoint
             if args.save:
@@ -107,21 +113,27 @@ def pipeline(args, config):
 
     if args.mode in ['evaluation', 'both']:
         val_loader = get_dataloader(config, args.validation_dataset, is_training=False)
-        val_output = evaluate(args, config)
+        val_output = evaluate(args, config, val_loader)
+
+        test_loader = get_dataloader(config, args.test_dataset, is_training=False)
+        test_output = evaluate(args, config, test_loader, test_for_submission=True)
 
         # -- saving model output
         if args.save:
-            save_model_output(val_output, args.output_dir, args.output_name)
+            save_model_output(val_output, args.output_dir, 'validation')
+            save_model_output(test_output, args.output_dir, 'test')
 
         # -- displaying final report
+        print(f'\nVALIDATION REPORT:')
+        print(val_output['pyevall-report'].print_report())
+
         # eval_report = classification_report(
         #     val_output['preds'],
         #     val_output['labels'],
         # )
         #     target_names=config.class_names,
-        print()
         # print(eval_report)
-        print(val_output['pyevall-report'].print_report())
+
 
     return val_output
 
@@ -134,13 +146,13 @@ if __name__ == "__main__":
     parser.add_argument('--config', required=True, type=str, help='Configuration file to build, train, and evaluate the model')
     parser.add_argument('--training-dataset', required=True, type=str, help='CSV file representing the training dataset')
     parser.add_argument('--validation-dataset', required=True, type=str, help='CSV file representing the validation dataset')
+    parser.add_argument('--test-dataset', required=True, type=str, help='CSV file representing the test dataset')
     parser.add_argument('--mode', default='both', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument('--load-checkpoint', default='', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument("--yaml-overrides", metavar="CONF:[KEY]:VALUE", nargs='*', help="Set a number of conf-key-value pairs for modifying the yaml config file on the fly.")
     parser.add_argument("--use-modalities", nargs='+', default=['all_modalities'], help="It allows you to choose which modalities will be used.")
     parser.add_argument('--save', default=1, type=int, help='Do you want to save checkpoints and output reports?')
     parser.add_argument('--output-dir', required=True, type=str, help='Path where to save model checkpoints and predictions')
-    parser.add_argument('--output-name', required=True, type=str, help='Choose between: "validation", or "test"')
 
     args = parser.parse_args()
 

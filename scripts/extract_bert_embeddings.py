@@ -82,8 +82,8 @@ if __name__ == "__main__":
 
     # -- creating output embedding directories
     os.makedirs(args.output_dir, exist_ok=True)
-    os.makedirs(os.path.join(args.output_dir, 'BERT-text'), exist_ok=True)
-    os.makedirs(os.path.join(args.output_dir, 'BERT-caption'), exist_ok=True)
+    os.makedirs(os.path.join(args.output_dir, 'bert-text'), exist_ok=True)
+    os.makedirs(os.path.join(args.output_dir, 'bert-caption'), exist_ok=True)
 
     # -- processing dataset
     with open(args.split_path) as f:
@@ -98,7 +98,10 @@ if __name__ == "__main__":
             text_emb = get_bert_embeddings(text)
             save_embedding(text_emb, os.path.join(args.output_dir, 'BERT-text', f'{sample_id}.npz'))
         if args.type != 'text':
-            capt_df = pd.read_csv('/home/dgimeno/EXIST2024/PINK-at-EXIST2024/data/EXIST2024/EXIST_2024_Memes_Dataset/blip_caption_train.csv', sep='\t')
+            if 'test' in str(args.split_path):
+                capt_df = pd.read_csv('/home/dgimeno/EXIST2024/PINK-at-EXIST2024/data/EXIST2024/EXIST_2024_Memes_Dataset/blip_captions_test.csv', sep='\t')
+            else:
+                capt_df = pd.read_csv('/home/dgimeno/EXIST2024/PINK-at-EXIST2024/data/EXIST2024/EXIST_2024_Memes_Dataset/blip_caption_train.csv', sep='\t')
             capt_df['image_name'] = capt_df['image_name'].astype(str)
             caption = capt_df.loc[capt_df['image_name']==str(sample_id), 'caption_free'].values[0]
             caption_emb = get_bert_embeddings(caption)

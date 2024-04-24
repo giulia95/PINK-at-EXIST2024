@@ -83,7 +83,7 @@ if __name__ == "__main__":
         # text = original_split[sample_id]['text']
         # blip_caption = caption_df.loc[caption_df['image_name'] == sample_id]['caption_free'].values[0].strip()
 
-        hard_label_task4, soft_label_task4 = get_labels('task4', original_split[sample_id]['labels_task4'])
+        hard_label_task4, soft_label_task4 = get_labels('task4', original_split[sample_id]['labels_task4']) if 'test' not in args.split_name else (-1, -1)
 
         new_split.append( (sample_id, lang, clip_image_emb_path, clip_text_emb_path, clip_caption_emb_path, bert_text_emb_path, bert_caption_emb_path, hard_label_task4, soft_label_task4) )
 

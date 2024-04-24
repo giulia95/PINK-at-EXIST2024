@@ -65,7 +65,7 @@ class PinkTransformer(torch.nn.Module):
     else:
       raise ValueError(f'unknown loss criterion {args.training_settings["loss_criterion"]}')
 
-  def forward(self, batch):
+  def forward(self, batch, test_for_submission=False):
     model_output = {}
     all_modalities = []
 
@@ -106,7 +106,8 @@ class PinkTransformer(torch.nn.Module):
     model_output['probs'] = torch.nn.functional.softmax(logits, dim = -1)
     model_output['preds'] = logits.argmax(dim = -1)
     model_output['labels'] = batch['label']
-    model_output['loss'] = self.loss_criterion(logits, batch['label'])
+    if not test_for_submission:
+        model_output['loss'] = self.loss_criterion(logits, batch['label'])
 
     return model_output
 

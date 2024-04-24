@@ -2,6 +2,7 @@ import os
 import json
 import argparse
 import numpy as np
+import pandas as pd
 from PIL import Image
 from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
@@ -40,9 +41,12 @@ if __name__ == "__main__":
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('--split-path', required=True, type=str, help='Path to the JSON representing the dataset split from which the embeddings will be extracted')
+    parser.add_argument('--caption-csv-path', default='', type=str, help='Path to the CSV containing the extracted captions for the dataset')
     parser.add_argument('--output-dir', required=True, type=str, help='Path where to save the extracted embeddings')
 
     args = parser.parse_args()
+
+    split_dir = os.sep.join(args.split_path.split(os.sep)[:-1])
 
     # -- building CLIP model
     clip_image_encoder, clip_text_encoder = build_clip()
@@ -57,14 +61,18 @@ if __name__ == "__main__":
     with open(args.split_path) as f:
         split = json.load(f)
 
+    if args.caption_csv_path:
+        caption_df = pd.read_csv(args.caption_csv_path, sep='\t')
+
     for sample_id in tqdm(split.keys()):
         sample = split[sample_id]
 
         # -- extracting embeddings
-        image = Image.open(sample['image_path'])
+        image = Image.open( os.path.join(split_dir, sample['path_memes']) )
         text = sample['text'].strip()
-        caption = sample['blip_caption'].strip()
+        caption = sample['blip_caption'].strip() if not args.caption_csv_path else caption_df.loc[caption_df['image_name']==int(sample_id)].iloc[0]['caption_free'].strip()
 
+        print(f'{text}##{caption}')
         img_emb, text_emb, caption_emb = extract_embeddings(image, text, caption)
 
         # -- saving embeddings

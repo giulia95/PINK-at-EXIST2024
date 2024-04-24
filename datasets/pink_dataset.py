@@ -3,10 +3,12 @@ import numpy as np
 import pandas as pd
 
 class PinkDataset(torch.utils.data.Dataset):
-    def __init__(self, dataset_path, task_id='soft_label_task4', is_training=True):
+    def __init__(self, dataset_path, task_id='soft_label_task4', language_filter='both', is_training=True):
 
         self.task_id = task_id
         self.dataset = pd.read_csv(dataset_path, sep='\t')
+        if language_filter in ['en', 'es']:
+            self.dataset = self.dataset[self.dataset['lang'] == language_filter]
 
     def __len__(self):
       return len(self.dataset)
