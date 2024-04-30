@@ -47,7 +47,7 @@ model_conf:
   use_cls_token: false
   use_modality_emb: true
   use_language_emb: true
-  use_annotators_emb: false
+  annotators_emb_type: false
   modality_masking_prob: 0.8
 
 # -- training settings related

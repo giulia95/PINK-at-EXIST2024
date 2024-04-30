@@ -15,7 +15,7 @@ class PinkTransformer(torch.nn.Module):
         for modality in self.args.modalities
     })
 
-    # [Optioanl] Use CLS token
+    # [Optional] Use CLS token
     if args.model_conf['use_cls_token']:
         self.cls_emb = torch.nn.Embedding(
             1,
@@ -45,11 +45,13 @@ class PinkTransformer(torch.nn.Module):
         self.language_emb = None
 
     # 3. Annotators' Metadata Layer
-    if args.model_conf['use_annotators_emb']:
+    if args.model_conf['annotators_emb_type'] == 'embedding':
         self.annotators_emb = torch.nn.ModuleDict({
             metadata['name']: torch.nn.Embedding(metadata['num_items'], args.model_conf['latent_dim'])
             for metadata in self.args.annotators_metadata
         })
+    elif args.model_conf['annotators_emb_type'] == 'linear':
+        self.annotators_emb = torch.nn.Linear(24, args.model_conf['latent_dim'])
     else:
         self.annotators_emb = None
 
@@ -113,7 +115,7 @@ class PinkTransformer(torch.nn.Module):
     cat_data = torch.cat(all_modalities, dim=1) # -- (batch, num_modalities, latent_dim)
 
     # 3. Annotators' Metadata
-    if self.annotators_emb is not None:
+    if self.args.model_conf['annotators_emb_type'] == 'embedding':
         all_annotators = []
         for metadata in self.args.annotators_metadata:
             metadata_id = metadata['name']
@@ -121,6 +123,14 @@ class PinkTransformer(torch.nn.Module):
             all_annotators.append(metadata_emb)
 
         annotators_data = torch.cat(all_annotators, dim=1)
+        cat_data = torch.cat([cat_data, annotators_data], dim=1)
+    elif self.args.model_conf['annotators_emb_type'] == 'linear':
+        all_annotators = []
+        for metadata in self.args.annotators_metadata:
+            metadata_id = metadata['name']
+            all_annotators.append( batch[metadata_id].unsqueeze(1) )
+        annotators_data = torch.cat(all_annotators, dim=-1)
+        annotators_data = self.annotators_emb(annotators_data.type(torch.float32))
         cat_data = torch.cat([cat_data, annotators_data], dim=1)
 
     # [Optional] CLS token
