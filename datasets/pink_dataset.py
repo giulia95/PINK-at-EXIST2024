@@ -1,9 +1,10 @@
+import ast
 import torch
 import numpy as np
 import pandas as pd
 
 class PinkDataset(torch.utils.data.Dataset):
-    def __init__(self, dataset_path, task_id='soft_label_task4', language_filter='both', is_training=True):
+    def __init__(self, dataset_path, task_id='hard_label_task4', language_filter='both', is_training=True):
 
         self.task_id = task_id
         self.dataset = pd.read_csv(dataset_path, sep='\t')
@@ -25,6 +26,12 @@ class PinkDataset(torch.utils.data.Dataset):
       batch_sample['bert_caption'] = np.load( sample['bert_caption_emb_path'] )['emb']
       batch_sample['language'] = sample['lang'].strip().lower()
       batch_sample['label'] = self.__getlabel__(self.task_id, sample)
+
+      # -- annotators' metadata
+      batch_sample['gender_annotators'] = np.array(ast.literal_eval(sample['gender_annotators']))
+      batch_sample['ethnicities_annotators'] = np.array(ast.literal_eval(sample['ethnicities_annotators']))
+      batch_sample['study_levels_annotators'] = np.array(ast.literal_eval(sample['study_levels_annotators']))
+      batch_sample['countries_annotators'] = np.array(ast.literal_eval(sample['countries_annotators']))
 
       return batch_sample
 

@@ -15,6 +15,15 @@ class PinkTransformer(torch.nn.Module):
         for modality in self.args.modalities
     })
 
+    # [Optioanl] Use CLS token
+    if args.model_conf['use_cls_token']:
+        self.cls_emb = torch.nn.Embedding(
+            1,
+            args.model_conf['latent_dim'],
+        )
+    else:
+        self.cls_emb = None
+
     # 1. Modality Embedding Layer
     self.modality_map = {modality['name']:id for id, modality in enumerate(sorted(self.args.modalities, key = lambda x: x['name']))}
     if args.model_conf['use_modality_emb']:
@@ -35,7 +44,16 @@ class PinkTransformer(torch.nn.Module):
     else:
         self.language_emb = None
 
-    # 3. Multi-Modal Multi-Lingual Transformer Backbone
+    # 3. Annotators' Metadata Layer
+    if args.model_conf['use_annotators_emb']:
+        self.annotators_emb = torch.nn.ModuleDict({
+            metadata['name']: torch.nn.Embedding(metadata['num_items'], args.model_conf['latent_dim'])
+            for metadata in self.args.annotators_metadata
+        })
+    else:
+        self.annotators_emb = None
+
+    # 4. Multi-Modal Multi-Lingual Transformer Backbone
     self.transformer_backbone = torch.nn.TransformerEncoder(
         encoder_layer=torch.nn.TransformerEncoderLayer(
             d_model=args.model_conf['latent_dim'],
@@ -49,7 +67,7 @@ class PinkTransformer(torch.nn.Module):
         enable_nested_tensor=False,
     )
 
-    # 4. Output Classification
+    # 5. Output Classification
     self.classifier = torch.nn.Sequential(
         torch.torch.nn.Linear(
             args.model_conf['latent_dim'],
@@ -58,7 +76,7 @@ class PinkTransformer(torch.nn.Module):
         ),
     )
 
-    # 5. Computing Loss Function
+    # 6. Computing Loss Function
     if args.training_settings['loss_criterion'] == 'cross_entropy':
         self.loss_criterion = torch.nn.CrossEntropyLoss(reduction='mean')
 
@@ -94,11 +112,31 @@ class PinkTransformer(torch.nn.Module):
 
     cat_data = torch.cat(all_modalities, dim=1) # -- (batch, num_modalities, latent_dim)
 
-    # 3. Multi-Modal Multi-Lingual Transformer Backbone
+    # 3. Annotators' Metadata
+    if self.annotators_emb is not None:
+        all_annotators = []
+        for metadata in self.args.annotators_metadata:
+            metadata_id = metadata['name']
+            metadata_emb = self.annotators_emb[metadata_id](batch[metadata_id])
+            all_annotators.append(metadata_emb)
+
+        annotators_data = torch.cat(all_annotators, dim=1)
+        cat_data = torch.cat([cat_data, annotators_data], dim=1)
+
+    # [Optional] CLS token
+    if self.cls_emb is not None:
+        cls_token = self.cls_emb( torch.LongTensor([0]*cat_data.shape[0]).to(cat_data.device) ).unsqueeze(1)
+        cat_data = torch.cat([cat_data, cls_token], dim=1)
+
+    # 4. Multi-Modal Multi-Lingual Transformer Backbone
     output = self.transformer_backbone(cat_data)
 
-    # 4. Output Classification
-    output = Reduce('b n d -> b d', 'mean')(output)
+    # 5. Output Classification
+    if self.cls_emb is not None:
+        output = output[:, -1, :]
+    else:
+        output = Reduce('b n d -> b d', 'mean')(output)
+
     logits = self.classifier(output)
 
     model_output['sample_id'] = batch['sample_id']

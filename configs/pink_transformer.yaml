@@ -22,6 +22,20 @@ languages:
  - en
  - es
 
+# -- annotators' metadata
+annotators_metadata:
+ - name: gender_annotators
+   num_items: 2
+
+ - name: ethnicities_annotators
+   num_items: 7
+
+ - name: study_levels_annotators
+   num_items: 6
+
+ - name: countries_annotators
+   num_items: 54
+
 # -- model architecture related
 model: pink_transformer
 model_conf:
@@ -30,8 +44,10 @@ model_conf:
   num_encoder_layers: 1
   dim_feedforward: 2048
   dropout: 0.1
+  use_cls_token: false
   use_modality_emb: true
   use_language_emb: true
+  use_annotators_emb: false
   modality_masking_prob: 0.8
 
 # -- training settings related
