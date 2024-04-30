@@ -1,9 +1,8 @@
 *.swp
 data/
 exps/
-hope/
-studies/
 scripts/IdentityTerms/
+splits/MAMI/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

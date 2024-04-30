@@ -76,10 +76,10 @@ def evaluate(args, config, eval_loader, test_for_submission=False):
 def pipeline(args, config):
 
     # -- setting seed
-    random.seed(42)
-    np.random.seed(42)
-    torch.manual_seed(42)
-    torch.cuda.manual_seed_all(42)
+    random.seed(config.seed)
+    np.random.seed(config.seed)
+    torch.manual_seed(config.seed)
+    torch.cuda.manual_seed_all(config.seed)
 
     # -- building model architecture
     global model, optimizer, scheduler, train_loader, val_loader
@@ -89,6 +89,7 @@ def pipeline(args, config):
 
     # -- loading model checkpoint
     if args.load_checkpoint:
+        print(f'Loading checkpoint from {args.load_checkpoint} ...')
         checkpoint = torch.load(args.load_checkpoint)
         model.load_state_dict(checkpoint)
 

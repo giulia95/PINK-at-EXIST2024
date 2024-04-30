@@ -69,7 +69,7 @@ if __name__ == "__main__":
     parser.add_argument('--split-path', required=True, type=str, help='Path to the JSON representing the dataset split from which the embeddings will be extracted')
     parser.add_argument('--output-dir', required=True, type=str, help='Path where to save the extracted embeddings')
     parser.add_argument('--type', required=True, type=str, help='Types of embeddings to extract (text, capt or text+capt)')
-
+    parser.add_argument('--dataset', default='EXIST2024', type=str, help='Dataset name')
 
     args = parser.parse_args()
 

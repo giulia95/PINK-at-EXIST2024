@@ -54,3 +54,4 @@ report_class: 'sexism'
 task: 'hard_label_task4'
 language_filter: both
 device: 'cuda'
+seed: 42

@@ -40,35 +40,40 @@ def masking_and_epochs(max_epochs=10):
         file.write(f"Masking Percentage: {best_masking_percentage}\n")
         file.write(f"ICM-norm: {best_ICM}\n")
 
-def lr_and_attnheads():
+def lr_layers_and_attnheads():
     best_ICM = 0
     best_lr = 0
     best_attnheads = 0
 
     for lr in [0.0001, 0.0002, 0.0003, 0.0004, 0.0005, 0.0006, 0.0007, 0.0008, 0.0009, 0.001]:
-        for attnheads in [2, 4, 8, 16, 32]:
-            print(f"Evaluating model with LR: {lr}, and {attnheads} attention heads...")
-            config.training_settings['learning_rate'] = lr
-            config.model_conf['n_heads'] = attnheads
+        for layers in [1, 2, 4, 6]:
+            for attnheads in [2, 4, 8, 16, 32]:
+                print(f"Evaluating model with LR: {lr}, and {attnheads} attention heads...")
+                config.training_settings['learning_rate'] = lr
+                config.model_conf['num_encoder_layers'] = layers
+                config.model_conf['n_heads'] = attnheads
 
-            val_output = pipeline(args, config)
+                val_output = pipeline(args, config)
 
-            # Check if this model's accuracy is better than the previous best
-            if val_output['icm-norm'] > best_ICM:
-                best_ICM = val_output['icm-norm']
-                best_lr = lr
-                best_attnheads = attnheads
+                # Check if this model's accuracy is better than the previous best
+                if val_output['icm-norm'] > best_ICM:
+                    best_ICM = val_output['icm-norm']
+                    best_lr = lr
+                    best_layers = layers
+                    best_attnheads = attnheads
 
-            # Save the best hyperparameters to a text file
-            with open("./best_hyperparameters_lr_attnheads.txt", "a") as file:
-                file.write(f"LR: {lr}\n")
-                file.write(f"ATTN HEADS: {attnheads}\n")
-                file.write(f"ICM-norm: {val_output['icm-norm'] }\n")
+                # Save the best hyperparameters to a text file
+                with open("./best_hyperparameters_lr_attnheads.txt", "a") as file:
+                    file.write(f"LR: {lr}\n")
+                    file.write(f"ENCODER LAYERS: {layers}\n")
+                    file.write(f"ATTN HEADS: {attnheads}\n")
+                    file.write(f"ICM-norm: {val_output['icm-norm'] }\n")
 
     # Save the best hyperparameters to a text file
     with open("./best_hyperparameters_lr_attnheads.txt", "a") as file:
         file.write(f"Best Hyperparameters:\n")
         file.write(f"Best LR: {best_lr}\n")
+        file.write(f"Best ENCODER LAYERS: {best_layers}\n")
         file.write(f"Best ATTN HEADS: {best_attnheads}\n")
         file.write(f"ICM-norm: {best_ICM}\n")
 
@@ -82,13 +87,13 @@ if __name__ == "__main__":
     parser.add_argument('--config', required=True, type=str, help='Configuration file to build, train, and evaluate the model')
     parser.add_argument('--training-dataset', required=True, type=str, help='CSV file representing the training dataset')
     parser.add_argument('--validation-dataset', required=True, type=str, help='CSV file representing the validation dataset')
+    parser.add_argument('--test-dataset', required=True, type=str, help='CSV file representing the test dataset')
     parser.add_argument('--mode', default='both', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument('--load-checkpoint', default='', type=str, help='Choose between: "training", "evaluation", or "both"')
     parser.add_argument("--yaml-overrides", metavar="CONF:[KEY]:VALUE", nargs='*', help="Set a number of conf-key-value pairs for modifying the yaml config file on the fly.")
     parser.add_argument("--use-modalities", nargs='+', default=['all_modalities'], help="It allows you to choose which modalities will be used.")
     parser.add_argument('--save', default=1, type=int, help='Do you want to save checkpoints and output reports?')
     parser.add_argument('--output-dir', required=True, type=str, help='Path where to save model checkpoints and predictions')
-    parser.add_argument('--output-name', required=True, type=str, help='Choose between: "validation", or "test"')
 
     args = parser.parse_args()
 
@@ -112,4 +117,4 @@ if __name__ == "__main__":
 
     ###
     # masking_and_epochs()
-    lr_and_attnheads()
+    lr_layers_and_attnheads()

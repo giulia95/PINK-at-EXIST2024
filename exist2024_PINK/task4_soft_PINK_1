@@ -1,0 +1,8426 @@
+[
+  {
+    "test_case": "EXIST2024",
+    "id": "310001",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310002",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310003",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310004",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310005",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310006",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310007",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310008",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310009",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310010",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310011",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310012",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310013",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310014",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310015",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310016",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310017",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310018",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310019",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310020",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310021",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310022",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310023",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310024",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310025",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310026",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310027",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310028",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310029",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310030",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310031",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310032",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310033",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310034",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310035",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310036",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310037",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310038",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310039",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310040",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310041",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310042",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310043",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310044",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310045",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310046",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310047",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310048",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310049",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310050",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310051",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310052",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310053",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310054",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310055",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310056",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310057",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310058",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310059",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310060",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310061",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310062",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310063",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310064",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310065",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310066",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310067",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310068",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310069",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310070",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310071",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310072",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310073",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310074",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310075",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310076",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310077",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310078",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310079",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310080",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310081",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310082",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310083",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310084",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310085",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310086",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310087",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310088",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310089",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310090",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310091",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310092",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310093",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310094",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310095",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310096",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310097",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310098",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310099",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310100",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310101",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310102",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310103",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310104",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310105",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310106",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310107",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310108",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310109",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310110",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310111",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310112",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310113",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310114",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310115",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310116",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310117",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310118",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310119",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310120",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310121",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310122",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310123",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310124",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310125",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310126",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310127",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310128",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310129",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310130",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310131",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310132",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310133",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310134",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310135",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310136",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310137",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310138",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310139",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310140",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310141",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310142",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310143",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310144",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310145",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310146",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310147",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310148",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310149",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310150",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310151",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310152",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310153",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310154",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310155",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310156",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310157",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310158",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310159",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310160",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310161",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310162",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310163",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310164",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310165",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310166",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310167",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310168",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310169",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310170",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310171",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310172",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310173",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310174",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310175",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310176",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310177",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310178",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310179",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310180",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310181",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310182",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310183",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310184",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310185",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310186",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310187",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310188",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310189",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310190",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310191",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310192",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310193",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310194",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310195",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310196",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310197",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310198",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310199",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310200",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310201",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310202",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310203",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310204",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310205",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310206",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310207",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310208",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310209",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310210",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310211",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310212",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310213",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310214",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310215",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310216",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310217",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310218",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310219",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310220",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310221",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310222",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310223",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310224",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310225",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310226",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310227",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310228",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310229",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310230",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310231",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310232",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310233",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310234",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310235",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310236",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310237",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310238",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310239",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310240",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310241",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310242",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310243",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310244",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310245",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310246",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310247",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310248",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310249",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310250",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310251",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310252",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310253",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310254",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310255",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310256",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310257",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310258",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310259",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310260",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310261",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310262",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310263",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310264",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310265",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310266",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310267",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310268",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310269",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310270",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310271",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310272",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310273",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310274",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310275",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310276",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310277",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310278",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310279",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310280",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310281",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310282",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310283",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310284",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310285",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310286",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310287",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310288",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310289",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310290",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310291",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310292",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310293",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310294",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310295",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310296",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310297",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310298",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310299",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310300",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310301",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310302",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310303",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310304",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310305",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310306",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310307",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310308",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310309",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310310",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310311",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310312",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310313",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310314",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310315",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310316",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310317",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310318",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310319",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310320",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310321",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310322",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310323",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310324",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310325",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310326",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310327",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310328",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310329",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310330",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310331",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310332",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310333",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310334",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310335",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310336",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310337",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310338",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310339",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310340",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310341",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310342",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310343",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310344",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310345",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310346",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310347",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310348",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310349",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310350",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310351",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310352",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310353",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310354",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310355",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310356",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310357",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310358",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310359",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310360",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310361",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310362",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310363",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310364",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310365",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310366",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310367",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310368",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310369",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310370",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310371",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310372",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310373",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310374",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310375",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310376",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310377",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310378",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310379",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310380",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310381",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310382",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310383",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310384",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310385",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310386",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310387",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310388",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310389",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310390",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310391",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310392",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310393",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310394",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310395",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310396",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310397",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310398",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310399",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310400",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310401",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310402",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310403",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310404",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310405",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310406",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310407",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310408",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310409",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310410",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310411",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310412",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310413",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310414",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310415",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310416",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310417",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310418",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310419",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310420",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310421",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310422",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310423",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310424",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310425",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310426",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310427",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310428",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310429",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310430",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310431",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310432",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310433",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310434",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310435",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310436",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310437",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310438",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310439",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310440",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310441",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310442",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310443",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310444",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310445",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310446",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310447",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310448",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310449",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310450",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310451",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310452",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310453",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310454",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310455",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310456",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310457",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310458",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310459",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310460",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310461",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310462",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310463",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310464",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310465",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310466",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310467",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310468",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310469",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310470",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310471",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310472",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310473",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310474",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310475",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310476",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310477",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310478",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310479",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310480",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310481",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310482",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310483",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310484",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310485",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310486",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310487",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310488",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310489",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310490",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310491",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310492",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310493",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310494",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310495",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310496",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310497",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310498",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310499",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310500",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310501",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310502",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310503",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310504",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310505",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310506",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310507",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310508",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310509",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310510",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310511",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310512",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310513",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310514",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310515",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310516",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310517",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310518",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310519",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310520",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310521",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310522",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310523",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310524",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310525",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310526",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310527",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310528",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310529",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310530",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310531",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310532",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310533",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310534",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310535",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310536",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310537",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310538",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310539",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "310540",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410001",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410002",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410003",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410004",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410005",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410006",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410007",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410008",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410009",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410010",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410011",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410012",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410013",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410014",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410015",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410016",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410017",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410018",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410019",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410020",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410021",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410022",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410023",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410024",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410025",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410026",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410027",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410028",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410029",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410030",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410031",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410032",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410033",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410034",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410035",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410036",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410037",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410038",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410039",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410040",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410041",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410042",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410043",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410044",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410045",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410046",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410047",
+    "value": {
+      "YES": 1.0,
+      "NO": 0.0
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410048",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410049",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410050",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410051",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410052",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410053",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410054",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410055",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410056",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410057",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410058",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410059",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410060",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410061",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410062",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410063",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410064",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410065",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410066",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410067",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410068",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410069",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410070",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410071",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410072",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410073",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410074",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410075",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410076",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410077",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410078",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410079",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410080",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410081",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410082",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410083",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410084",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410085",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410086",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410087",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410088",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410089",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410090",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410091",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410092",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410093",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410094",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410095",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410096",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410097",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410098",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410099",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410100",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410101",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410102",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410103",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410104",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410105",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410106",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410107",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410108",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410109",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410110",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410111",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410112",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410113",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410114",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410115",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410116",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410117",
+    "value": {
+      "YES": 0.0,
+      "NO": 1.0
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410118",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410119",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410120",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410121",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410122",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410123",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410124",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410125",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410126",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410127",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410128",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410129",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410130",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410131",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410132",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410133",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410134",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410135",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410136",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410137",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410138",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410139",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410140",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410141",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410142",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410143",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410144",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410145",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410146",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410147",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410148",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410149",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410150",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410151",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410152",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410153",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410154",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410155",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410156",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410157",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410158",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410159",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410160",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410161",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410162",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410163",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410164",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410165",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410166",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410167",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410168",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410169",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410170",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410171",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410172",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410173",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410174",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410175",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410176",
+    "value": {
+      "YES": 1.0,
+      "NO": 0.0
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410177",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410178",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410179",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410180",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410181",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410182",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410183",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410184",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410185",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410186",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410187",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410188",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410189",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410190",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410191",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410192",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410193",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410194",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410195",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410196",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410197",
+    "value": {
+      "YES": 1.0,
+      "NO": 0.0
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410198",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410199",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410200",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410201",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410202",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410203",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410204",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410205",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410206",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410207",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410208",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410209",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410210",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410211",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410212",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410213",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410214",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410215",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410216",
+    "value": {
+      "YES": 0.0,
+      "NO": 1.0
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410217",
+    "value": {
+      "YES": 0.0,
+      "NO": 1.0
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410218",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410219",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410220",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410221",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410222",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410223",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410224",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410225",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410226",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410227",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410228",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410229",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410230",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410231",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410232",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410233",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410234",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410235",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410236",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410237",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410238",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410239",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410240",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410241",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410242",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410243",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410244",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410245",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410246",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410247",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410248",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410249",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410250",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410251",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410252",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410253",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410254",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410255",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410256",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410257",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410258",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410259",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410260",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410261",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410262",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410263",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410264",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410265",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410266",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410267",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410268",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410269",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410270",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410271",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410272",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410273",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410274",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410275",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410276",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410277",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410278",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410279",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410280",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410281",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410282",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410283",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410284",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410285",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410286",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410287",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410288",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410289",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410290",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410291",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410292",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410293",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410294",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410295",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410296",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410297",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410298",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410299",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410300",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410301",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410302",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410303",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410304",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410305",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410306",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410307",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410308",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410309",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410310",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410311",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410312",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410313",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410314",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410315",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410316",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410317",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410318",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410319",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410320",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410321",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410322",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410323",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410324",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410325",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410326",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410327",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410328",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410329",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410330",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410331",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410332",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410333",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410334",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410335",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410336",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410337",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410338",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410339",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410340",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410341",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410342",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410343",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410344",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410345",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410346",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410347",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410348",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410349",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410350",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410351",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410352",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410353",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410354",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410355",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410356",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410357",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410358",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410359",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410360",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410361",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410362",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410363",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410364",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410365",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410366",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410367",
+    "value": {
+      "YES": 0.0,
+      "NO": 1.0
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410368",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410369",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410370",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410371",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410372",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410373",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410374",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410375",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410376",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410377",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410378",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410379",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410380",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410381",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410382",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410383",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410384",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410385",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410386",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410387",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410388",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410389",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410390",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410391",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410392",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410393",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410394",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410395",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410396",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410397",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410398",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410399",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410400",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410401",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410402",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410403",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410404",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410405",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410406",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410407",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410408",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410409",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410410",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410411",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410412",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410413",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410414",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410415",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410416",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410417",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410418",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410419",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410420",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410421",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410422",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410423",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410424",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410425",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410426",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410427",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410428",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410429",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410430",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410431",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410432",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410433",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410434",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410435",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410436",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410437",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410438",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410439",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410440",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410441",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410442",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410443",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410444",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410445",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410446",
+    "value": {
+      "YES": 0.1666,
+      "NO": 0.8334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410447",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410448",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410449",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410450",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410451",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410452",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410453",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410454",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410455",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410456",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410457",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410458",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410459",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410460",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410461",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410462",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410463",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410464",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410465",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410466",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410467",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410468",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410469",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410470",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410471",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410472",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410473",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410474",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410475",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410476",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410477",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410478",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410479",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410480",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410481",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410482",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410483",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410484",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410485",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410486",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410487",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410488",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410489",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410490",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410491",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410492",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410493",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410494",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410495",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410496",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410497",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410498",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410499",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410500",
+    "value": {
+      "YES": 0.3333,
+      "NO": 0.6667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410501",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410502",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410503",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410504",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410505",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410506",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410507",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410508",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410509",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410510",
+    "value": {
+      "YES": 0.8333,
+      "NO": 0.1667
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410511",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410512",
+    "value": {
+      "YES": 0.6666,
+      "NO": 0.3334
+    }
+  },
+  {
+    "test_case": "EXIST2024",
+    "id": "410513",
+    "value": {
+      "YES": 0.5,
+      "NO": 0.5
+    }
+  }
+]

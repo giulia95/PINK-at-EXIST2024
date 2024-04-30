@@ -142,7 +142,7 @@ def hard_output_to_json(output_path, out_key, model_output):
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(tojson, f, ensure_ascii=False, indent=2)
 
-def evaluate_model(output_dir, task_id, model_output, preds_output_name='preds.json', golds_output_name='golds.json', only_output_json=False):
+def evaluate_model(output_dir, task_id, model_output, preds_output_name='validation_preds_last_epoch.json', golds_output_name='validation_golds.json', only_output_json=False):
     '''Implementation for Task 4 in a soft-soft evaluation.
     '''
     # -- creating output directory
