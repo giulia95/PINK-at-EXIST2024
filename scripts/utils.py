@@ -9,7 +9,7 @@ from os import path
 sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
 
 from datasets import PinkDataset
-from models import PinkTransformer
+from models import PinkSimple, PinkTransformer
 
 from pyevall.utils.utils import PyEvALLUtils
 from pyevall.evaluation import PyEvALLEvaluation
@@ -17,6 +17,8 @@ from pyevall.evaluation import PyEvALLEvaluation
 def build_model(config):
     if config.model == 'pink_transformer':
         model = PinkTransformer(config).to(config.device)
+    elif config.model == 'pink_simple':
+        model = PinkSimple(config).to(config.device)
     else:
         raise ValueError(f'unknown {config.model} model architecture')
 

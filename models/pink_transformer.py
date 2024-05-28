@@ -1,5 +1,6 @@
 import torch
 import numpy as np
+import torch.nn.functional as F
 from einops.layers.torch import Reduce
 
 class PinkTransformer(torch.nn.Module):
@@ -81,7 +82,13 @@ class PinkTransformer(torch.nn.Module):
     # 6. Computing Loss Function
     if args.training_settings['loss_criterion'] == 'cross_entropy':
         self.loss_criterion = torch.nn.CrossEntropyLoss(reduction='mean')
-
+    elif args.training_settings['loss_criterion'] == 'nll':
+        self.log_softmax = torch.nn.LogSoftmax(dim=1)
+        self.loss_criterion = torch.nn.NLLLoss(reduction='mean')
+    elif args.training_settings['loss_criterion'] == 'mse':
+        self.loss_criterion = torch.nn.MSELoss()
+    elif args.training_settings['loss_criterion'] == 'kl':
+        self.loss_criterion = torch.nn.KLDivLoss(reduction='batchmean')
     else:
       raise ValueError(f'unknown loss criterion {args.training_settings["loss_criterion"]}')
 
@@ -155,7 +162,15 @@ class PinkTransformer(torch.nn.Module):
     model_output['preds'] = logits.argmax(dim = -1)
     model_output['labels'] = batch['label']
     if not test_for_submission:
-        model_output['loss'] = self.loss_criterion(logits, batch['label'])
+        if self.args.training_settings['loss_criterion'] == 'nll':
+            log_logits = self.log_softmax(logits)
+            model_output['loss'] = self.loss_criterion(log_logits, batch['label'])
+        elif self.args.training_settings['loss_criterion'] == 'kl':
+            log_logits = F.log_softmax(logits, dim=1)
+            log_targets = F.softmax(batch['label'], dim=1)
+            model_output['loss'] = self.loss_criterion(log_logits, log_targets)
+        else:
+            model_output['loss'] = self.loss_criterion(logits, batch['label'])
 
     return model_output
 
@@ -180,5 +195,6 @@ class LinearModalityEncoder(torch.nn.Module):
         x = self.projection(x)
 
         return x
+
 
 

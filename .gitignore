@@ -3,6 +3,10 @@ data/
 exps/
 scripts/IdentityTerms/
 splits/MAMI/
+BMA_pred/
+Majority_voting_Hard_labels/
+ensemble_new/
+exist2024_PINK_OLD/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

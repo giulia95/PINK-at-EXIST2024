@@ -16,17 +16,25 @@ def get_bert_embeddings(sentence, max_length=512):
     tokens = ['[CLS]'] + tokens + ['[SEP]']
     # Convert tokens to vocabulary indices
     input_ids = tokenizer.convert_tokens_to_ids(tokens)
+    input_length = len(input_ids)
     # Pad sequences if necessary
-    padding_length = max_length - len(input_ids)
+    padding_length = max_length - input_length
     input_ids += [tokenizer.pad_token_id] * padding_length
+
+    attn_mask = torch.zeros(max_length)
+    attn_mask[:(input_length+1)] = 1.0
+
     # Convert input_ids to PyTorch tensor
     input_tensor = torch.tensor([input_ids]).to(device)
+    attn_mask_tensor = attn_mask.unsqueeze(0).to(device)
+
     # Forward pass, get hidden states
     with torch.no_grad():
-        outputs = model(input_tensor)
+        outputs = model(input_tensor, attn_mask_tensor)
         # Extract hidden states of all layers (last_hidden_state) for the first token (CLS token)
         hidden_states = outputs[0]
-        cls_embedding = hidden_states[:, 0, :].cpu().numpy()
+        # cls_embedding = hidden_states[:, 0, :].cpu().numpy()
+        cls_embedding = hidden_states[:, :input_length, :].cpu().numpy()
     # Return the embedding for the [CLS] token
     return cls_embedding
 
@@ -82,8 +90,8 @@ if __name__ == "__main__":
 
     # -- creating output embedding directories
     os.makedirs(args.output_dir, exist_ok=True)
-    os.makedirs(os.path.join(args.output_dir, 'bert-text'), exist_ok=True)
-    os.makedirs(os.path.join(args.output_dir, 'bert-caption'), exist_ok=True)
+    os.makedirs(os.path.join(args.output_dir, 'bert_token_text'), exist_ok=True)
+    os.makedirs(os.path.join(args.output_dir, 'bert_token_caption'), exist_ok=True)
 
     # -- processing dataset
     with open(args.split_path) as f:
@@ -96,7 +104,8 @@ if __name__ == "__main__":
         if args.type != 'capt':
             text = sample['text'].strip()
             text_emb = get_bert_embeddings(text)
-            save_embedding(text_emb, os.path.join(args.output_dir, 'BERT-text', f'{sample_id}.npz'))
+            save_embedding(text_emb, os.path.join(args.output_dir, 'bert_token_text', f'{sample_id}.npz'))
+
         if args.type != 'text':
             if 'test' in str(args.split_path):
                 capt_df = pd.read_csv('/home/dgimeno/EXIST2024/PINK-at-EXIST2024/data/EXIST2024/EXIST_2024_Memes_Dataset/blip_captions_test.csv', sep='\t')
@@ -105,5 +114,4 @@ if __name__ == "__main__":
             capt_df['image_name'] = capt_df['image_name'].astype(str)
             caption = capt_df.loc[capt_df['image_name']==str(sample_id), 'caption_free'].values[0]
             caption_emb = get_bert_embeddings(caption)
-            save_embedding(caption_emb, os.path.join(args.output_dir, 'BERT-caption', f'{sample_id}.npz'))
-
+            save_embedding(caption_emb, os.path.join(args.output_dir, 'bert_token_caption', f'{sample_id}.npz'))

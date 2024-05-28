@@ -8,73 +8,56 @@ from pathlib import Path
 from main import pipeline
 from utils import override_yaml
 
-def masking_and_epochs(max_epochs=10):
-    best_ICM = 0
-    best_epochs = 0
-    best_masking_percentage = 0
-
-    for epochs in range(1, max_epochs+1):
-        for masking_percentage in np.arange(0.1, 1.1, 0.1):
-            print(f"Evaluating model with {epochs} epochs and masking percentage {masking_percentage}...")
-            config.training_settings['epochs'] = epochs
-            config.model_conf['modality_masking_prob'] = masking_percentage
-
-            val_output = pipeline(args, config)
-
-            # Check if this model's accuracy is better than the previous best
-            if val_output['icm-norm'] > best_ICM:
-                best_ICM = val_output['icm-norm']
-                best_epochs = epochs
-                best_masking_percentage = masking_percentage
-
-            # Save the best hyperparameters to a text file
-            with open("./best_hyperparameters_masking_epochs.txt", "a") as file:
-                file.write(f"Epochs: {epochs}\n")
-                file.write(f"Masking Percentage: {masking_percentage}\n")
-                file.write(f"ICM-norm: {val_output['icm-norm'] }\n")
-
-    # Save the best hyperparameters to a text file
-    with open("./best_hyperparameters_masking_epochs.txt", "a") as file:
-        file.write(f"Best Hyperparameters:\n")
-        file.write(f"Epochs: {best_epochs}\n")
-        file.write(f"Masking Percentage: {best_masking_percentage}\n")
-        file.write(f"ICM-norm: {best_ICM}\n")
-
-def lr_layers_and_attnheads():
+def complete():
     best_ICM = 0
     best_lr = 0
     best_attnheads = 0
+    best_epochs = 0
+    best_masking = 0
 
-    for lr in [0.0001, 0.0002, 0.0003, 0.0004, 0.0005, 0.0006, 0.0007, 0.0008, 0.0009, 0.001]:
-        for layers in [1, 2, 4, 6]:
-            for attnheads in [2, 4, 8, 16, 32]:
-                print(f"Evaluating model with LR: {lr}, and {attnheads} attention heads...")
-                config.training_settings['learning_rate'] = lr
-                config.model_conf['num_encoder_layers'] = layers
-                config.model_conf['n_heads'] = attnheads
+    for lr in [0.0002, 0.0005]:
+        for layers in [1, 2, 4]:
+            for attnheads in [4, 8]:
+                for epochs in [3, 5, 7]:
+                    for masking_percentage in [0.7, 0.8, 0.9]:
+                        print(f"Evaluating model with: LR: {lr} | LAYERS: {layers} | ATTN_HEADS: {attnheads} | EPOCHS: {epochs} | MASKING: {masking_percentage}...")
 
-                val_output = pipeline(args, config)
+                        config.training_settings['learning_rate'] = lr
+                        config.model_conf['num_encoder_layers'] = layers
+                        config.model_conf['n_heads'] = attnheads
+                        config.training_settings['epochs'] = epochs
+                        config.model_conf['modality_masking_prob'] = masking_percentage
 
-                # Check if this model's accuracy is better than the previous best
-                if val_output['icm-norm'] > best_ICM:
-                    best_ICM = val_output['icm-norm']
-                    best_lr = lr
-                    best_layers = layers
-                    best_attnheads = attnheads
+                        val_output = pipeline(args, config)
 
-                # Save the best hyperparameters to a text file
-                with open("./best_hyperparameters_lr_attnheads.txt", "a") as file:
-                    file.write(f"LR: {lr}\n")
-                    file.write(f"ENCODER LAYERS: {layers}\n")
-                    file.write(f"ATTN HEADS: {attnheads}\n")
-                    file.write(f"ICM-norm: {val_output['icm-norm'] }\n")
+                        # Check if this model's accuracy is better than the previous best
+                        if val_output['icm-norm'] > best_ICM:
+                            best_ICM = val_output['icm-norm']
+                            best_lr = lr
+                            best_layers = layers
+                            best_attnheads = attnheads
+                            best_epochs = epochs
+                            best_masking = masking_percentage
+
+                        # Save the best hyperparameters to a text file
+                        with open("./best_simple_soft_hyperparameters.txt", "a") as file:
+                            file.write(f"LR: {lr}\n")
+                            file.write(f"LAYERS: {layers}\n")
+                            file.write(f"ATTN_HEADS: {attnheads}\n")
+                            file.write(f"EPOCHS: {epochs}\n")
+                            file.write(f"MASKING: {masking_percentage}\n")
+                            file.write("---------------------------------")
+                            file.write(f"ICM-norm: {val_output['icm-norm'] }\n\n")
 
     # Save the best hyperparameters to a text file
-    with open("./best_hyperparameters_lr_attnheads.txt", "a") as file:
+    with open("./best_simple_soft_hyperparameters.txt", "a") as file:
         file.write(f"Best Hyperparameters:\n")
         file.write(f"Best LR: {best_lr}\n")
-        file.write(f"Best ENCODER LAYERS: {best_layers}\n")
-        file.write(f"Best ATTN HEADS: {best_attnheads}\n")
+        file.write(f"Best LAYERS: {best_layers}\n")
+        file.write(f"Best ATTN_HEADS: {best_attnheads}\n")
+        file.write(f"Best EPOCHS: {best_epochs}\n")
+        file.write(f"Best MASKING: {best_masking}\n")
+        file.write("---------------------------------")
         file.write(f"ICM-norm: {best_ICM}\n")
 
 
@@ -116,5 +99,4 @@ if __name__ == "__main__":
     assert len(config.modalities) > 0, f'Ensure you specified the modalities you expected to use'
 
     ###
-    # masking_and_epochs()
-    lr_layers_and_attnheads()
+    complete()

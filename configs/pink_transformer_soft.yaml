@@ -1,0 +1,73 @@
+# -- modalities related
+modalities:
+ - name: clip_caption
+   input_dim: 512
+
+ - name: clip_image
+   input_dim: 512
+
+ - name: clip_text
+   input_dim: 512
+
+ - name: bert_caption
+   input_dim: 768
+
+ - name: bert_text
+   input_dim: 768
+
+use_modalities: [clip_caption, clip_image, clip_text, bert_caption, bert_text]
+
+# -- languages related
+languages:
+ - en
+ - es
+
+# -- annotators' metadata
+annotators_metadata:
+ - name: gender_annotators
+   num_items: 2
+
+ - name: ethnicities_annotators
+   num_items: 7
+
+ - name: study_levels_annotators
+   num_items: 6
+
+ - name: countries_annotators
+   num_items: 54
+
+# -- model architecture related
+model: pink_transformer
+model_conf:
+  latent_dim: 256
+  n_head: 4
+  num_encoder_layers: 4
+  dim_feedforward: 2048
+  dropout: 0.1
+  use_cls_token: false
+  use_modality_emb: true
+  use_language_emb: true
+  annotators_emb_type: false
+  modality_masking_prob: 0.7
+
+# -- training settings related
+training_settings:
+  optimizer: 'adamw'
+  scheduler: 'onecycle'
+  anneal_strategy: 'linear'
+  loss_criterion: 'cross_entropy'
+  epochs: 7
+  batch_size: 16
+  learning_rate: 0.0005
+  num_workers: 6
+
+# -- task related
+num_classes: 2
+class_names:
+ - sexism
+ - no-sexism
+report_class: 'sexism'
+task: 'soft_label_task4'
+language_filter: both
+device: 'cuda'
+seed: 42

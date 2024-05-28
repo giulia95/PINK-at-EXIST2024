@@ -1,0 +1,763 @@
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.45172789377760764
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.4601025870585019
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4666614157767678
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.5096738375695553
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.5160836542707633
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.5001879092582806
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.44297431535651677
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.47239432330366404
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.48888611638437757
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.45172789377760764
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.4601025870585019
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4666614157767678
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.5096738375695553
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.5160836542707633
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.5001879092582806
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.44297431535651677
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.47239432330366404
+
+LR: 0.0002
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.48888611638437757
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.45702647544843533
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.47781419663361313
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4783698141488035
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4940356860381475
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.5137121721929447
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4872192638388068
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.437120116170499
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.4816226581338639
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4859590167913687
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.45702647544843533
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.47781419663361313
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4783698141488035
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4940356860381475
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.5137121721929447
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4872192638388068
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.437120116170499
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.4816226581338639
+
+LR: 0.0002
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4859590167913687
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4319428261587927
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.4538417823743515
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4369838143485455
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.49226025202855966
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.49952371027907333
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.46380246709473544
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.46598450660245616
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.48606759825538587
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4661335186195137
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4319428261587927
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.4538417823743515
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4369838143485455
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.49226025202855966
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.49952371027907333
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.46380246709473544
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.46598450660245616
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.48606759825538587
+
+LR: 0.0002
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4661335186195137
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4684772803393961
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.47599833207098463
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.46636339174265246
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.47517241087961526
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.503074578298249
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.5041858133286294
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4586124668879251
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.46513086505315004
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4576098133215616
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4684772803393961
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.47599833207098463
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.46636339174265246
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.47517241087961526
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.503074578298249
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.5041858133286294
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4586124668879251
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.46513086505315004
+
+LR: 0.0005
+LAYERS: 1
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4576098133215616
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.46625481027863525
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.48507765488412713
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4775566031525384
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4659845066024561
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.49848062615966937
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.47168969377141606
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.432932769530052
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.45887006036899985
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.46250178949425674
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.46625481027863525
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.48507765488412713
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.4775566031525384
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.4659845066024561
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.49848062615966937
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.47168969377141606
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.432932769530052
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.45887006036899985
+
+LR: 0.0005
+LAYERS: 2
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.46250178949425674
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.48555241129323623
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.3197912491641745
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.47488709704060417
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.33038841250582957
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.49644759866900673
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.45461456281757584
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.3146416795104047
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.4834789532495327
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 4
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.47555129601981166
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.7
+---------------------------------ICM-norm: 0.48555241129323623
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.8
+---------------------------------ICM-norm: 0.3197912491641745
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 3
+MASKING: 0.9
+---------------------------------ICM-norm: 0.47488709704060417
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.7
+---------------------------------ICM-norm: 0.33038841250582957
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.8
+---------------------------------ICM-norm: 0.49644759866900673
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 5
+MASKING: 0.9
+---------------------------------ICM-norm: 0.45461456281757584
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.7
+---------------------------------ICM-norm: 0.3146416795104047
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.8
+---------------------------------ICM-norm: 0.4834789532495327
+
+LR: 0.0005
+LAYERS: 4
+ATTN_HEADS: 8
+EPOCHS: 7
+MASKING: 0.9
+---------------------------------ICM-norm: 0.47555129601981166
+
+Best Hyperparameters:
+Best LR: 0.0002
+Best LAYERS: 1
+Best ATTN_HEADS: 4
+Best EPOCHS: 5
+Best MASKING: 0.8
+---------------------------------ICM-norm: 0.5160836542707633
